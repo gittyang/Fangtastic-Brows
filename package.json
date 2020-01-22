@@ -1,0 +1,23 @@
+{
+  "name": "fangtastic-brows",
+  "version": "1.0.0",
+  "description": "Fangtastic Brows",
+  "main": "index.js",
+  "scripts": {
+    "sass": "node-sass -w src/scss/ -o build/css --recursive"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ttyang251/Fangtastic-Brows.git"
+  },
+  "author": "Tou Toua Yang",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ttyang251/Fangtastic-Brows/issues"
+  },
+  "homepage": "https://github.com/ttyang251/Fangtastic-Brows#readme",
+  "dependencies": {
+    "node-sass": "^4.13.1",
+    "sass": "^1.25.0"
+  }
+}
