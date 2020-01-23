@@ -12,7 +12,7 @@ body {
 h1 {
   margin: 0;
   padding: 0;
-  font-size: 2.5rem;
+  font-size: 2.3rem;
   font-weight: 400;
   line-height: 2.5rem;
   color: black; }
@@ -20,7 +20,7 @@ h1 {
 h2 {
   margin: 0;
   padding: 0;
-  font-size: 1.5rem;
+  font-size: 1.3rem;
   font-weight: 400;
   line-height: 1.5rem;
   color: black; }
@@ -28,7 +28,7 @@ h2 {
 p {
   margin: 0;
   padding: .5rem;
-  font-size: 1.1rem;
+  font-size: 1rem;
   line-height: 1.3rem; }
 
 li {
@@ -40,6 +40,14 @@ a {
   list-style-type: none;
   font-size: 1.2rem;
   font-weight: 400; }
+
+.bwButton {
+  border: 1px solid black;
+  padding: .3rem; }
+  .bwButton:hover {
+    background-color: #f8ba91;
+    transition: all .2s ease-out;
+    cursor: pointer; }
 
 .navbar {
   width: 100%;
@@ -63,16 +71,19 @@ a {
       display: flex;
       flex-direction: row; }
       .navbar .nav-wrapper .nav-links ul .nav-item {
-        padding-left: 2rem; }
+        padding: .3rem 1rem; }
         .navbar .nav-wrapper .nav-links ul .nav-item:hover {
-          cursor: pointer; }
+          cursor: pointer;
+          background-color: #fde7d9;
+          transition: all .2s ease-out; }
+      .navbar .nav-wrapper .nav-links ul .nav-item-bn {
+        margin-left: 1rem; }
       .navbar .nav-wrapper .nav-links ul .bwButton {
         border: 1px solid black;
         padding: .3rem; }
         .navbar .nav-wrapper .nav-links ul .bwButton:hover {
           background-color: #f8ba91;
-          transition-timing-function: ease-out;
-          transition: .2s; }
+          transition: all .2s ease-out; }
   .navbar .toggle-button {
     position: absolute;
     top: 1rem;
@@ -88,14 +99,6 @@ a {
       border-radius: 1px;
       margin: 2px;
       padding: 0; }
-
-.bwButton {
-  border: 1px solid black;
-  padding: .3rem; }
-  .bwButton:hover {
-    background-color: #f8ba91;
-    transition-timing-function: ease-out;
-    transition: .2s; }
 
 .landing-section {
   height: 600px;
@@ -120,18 +123,18 @@ a {
     top: 30%;
     right: 10%;
     z-index: 2; }
-    .landing-section .landing-container .landing {
-      height: 100px;
-      margin-bottom: .5rem; }
-      .landing-section .landing-container .landing h1, .landing-section .landing-container .landing h2 {
-        color: white; }
+    .landing-section .landing-container .landing h1, .landing-section .landing-container .landing h2 {
+      color: white; }
     .landing-section .landing-container .top {
-      z-index: 5; }
+      z-index: 3;
+      padding-bottom: 1rem; }
       .landing-section .landing-container .top #landing-h1 {
         font-size: 1.3rem; }
+    .landing-section .landing-container .bottom {
+      padding-bottom: 1.5rem; }
 
 .welcome-section {
-  height: 700px; }
+  height: 600px; }
   .welcome-section .welcome {
     height: 125px;
     text-align: center;
@@ -140,14 +143,40 @@ a {
     text-transform: uppercase; }
   .welcome-section .welcome-bottom {
     padding-top: 2rem;
-    text-align: center;
-    height: auto;
-    display: flex; }
+    height: auto; }
+    .welcome-section .welcome-bottom .welcome-bottom-wrapper {
+      width: 968px;
+      margin: auto;
+      text-align: center;
+      display: grid;
+      grid-template-columns: repeat(3, 1fr); }
     .welcome-section .welcome-bottom .welcome-services {
-      padding: 1rem; }
+      padding: 1rem 0; }
       .welcome-section .welcome-bottom .welcome-services h2 {
-        font-weight: 600; }
+        font-weight: 600;
+        padding-bottom: .5rem; }
+      .welcome-section .welcome-bottom .welcome-services p {
+        padding-bottom: 1rem; }
 
-.mission {
+.home-gallery {
   border: 2px solid green;
-  height: 500px; }
+  height: 700px; }
+
+footer {
+  height: 100px;
+  background-color: #fde7d9;
+  display: flex;
+  justify-content: space-between; }
+  footer #footer {
+    display: flex;
+    align-items: center;
+    padding-left: 2rem; }
+  footer #footer-icons {
+    display: flex;
+    align-items: center;
+    padding-right: 2rem; }
+    footer #footer-icons a {
+      margin-left: .5rem; }
+      footer #footer-icons a:hover {
+        color: #e2620e;
+        transition: all .2s ease-out; }
