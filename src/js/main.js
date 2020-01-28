@@ -14,49 +14,65 @@ const nextBtn = document.querySelector('#nextBtn');
 //Image Display & Anchor Tags
 const display = document.querySelector('.img-display img');
 const images = document.querySelectorAll('.slides li a');
-//.Slides Ul & Last Image Link
+//.Slides Ul, First & Last Image Link
 const slides = document.querySelector('.slides');
 const lastImg = slides.lastElementChild.querySelector('a').href;
-console.log(lastImg);
-console.log(display.src);
+const firstImg = slides.firstElementChild.querySelector('a').href;
 
-// If the image displayed is the last imgage, then hide the next button.
 
+// If image = last => hide nextBtn. If image = first => hide prevBtn
 homeGallery.addEventListener('click', (event) => {
-  console.log(event.target);
   if (display.src == lastImg) {
     nextBtn.style.display = 'none';
   } else {
     nextBtn.style.display = 'block';
   }
+
+  if (display.src == firstImg) {
+    prevBtn.style.display = 'none';
+  } else {
+    prevBtn.style.display = 'block';
+  }
 });
 
-
-
  nextBtn.addEventListener('click', () => {
+// Find match between display image and li images. Return to link variable.
   let link = findMatch();
-
   function findMatch(){
     for (let image of images) {
-      console.log(image);
       if (display.src == image.href) {
-        console.log('match');
         let linkMatch = image;
-        // console.log(linkMatch);
         return(linkMatch); 
       } 
     } 
   }
-  console.log(link); 
-
-  let linkParent = link.parentNode;
-  console.log(linkParent);
-  let linkNextUncle = linkParent.nextElementSibling;
-  console.log(linkNextUncle);
-  let linkNextCousin = linkNextUncle.querySelector('a');
-  console.log(linkNextCousin);
-  let cousinLink = linkNextCousin.href;
-  console.log(cousinLink);
-  display.src = cousinLink;  
+// Take current link and find NEXT item link. Display it.
+  let nextCousinLink = 
+  link
+  .parentNode
+  .nextElementSibling
+  .querySelector('a')
+  .href;
+display.src = nextCousinLink;  
 });
 
+prevBtn.addEventListener('click', () => {
+  // Find match between display image and li images. Return to link variable.
+    let link = findMatch();
+    function findMatch(){
+      for (let image of images) {
+        if (display.src == image.href) {
+          let linkMatch = image;
+          return(linkMatch); 
+        } 
+      } 
+    }
+  // Take current link and find PREVIOUS item link. Display it.
+    let prevCousinLink = 
+      link
+      .parentNode
+      .previousElementSibling
+      .querySelector('a')
+      .href;
+    display.src = prevCousinLink;  
+  });
