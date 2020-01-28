@@ -82,14 +82,23 @@
       <h1>Gallery</h1>
       <div id="gallery-underline"></div>
     </div>
-    <div class="img-display"><img src="../build/img/carousel1.jpg" alt=""></div>
-    <ul class="thumb">
-      <li><a href="../build/img/carousel1.jpg" target="imgBox"><img src="../build/img/carousel1.jpg"></a></li>
-      <li><a href="../build/img/carousel222.jpg" target="imgBox"><img src="../build/img/carousel222.jpg"></a></li>
-      <li><a href="../build/img/carousel3.jpg" target="imgBox"><img src="../build/img/carousel3.jpg"></a></li>
-      <li><a href="../build/img/carousel5.jpg" target="imgBox"><img src="../build/img/carousel5.jpg"></a></li>
-      <li><a href="../build/img/carousel444.jpg" target="imgBox"><img src="../build/img/carousel444.jpg"></a></li>
+    <div class="img-display"><img src="../build/img/carousel1.jpg" alt="">
+      <i class="fas fa-arrow-circle-left fa-2x" id="prevBtn"></i>
+      <i class="fas fa-arrow-circle-right fa-2x" id="nextBtn"></i>
+    </div>
+    <ul class="slides">
+      <li><a href="../build/img/carousel1.jpg"><img src="../build/img/carousel1.jpg"></a></li>
+      <li><a id ="two" href="../build/img/carousel2.jpg"><img src="../build/img/carousel2.jpg"></a></li>
+      <li><a id ="three" href="../build/img/carousel3.jpg"><img src="../build/img/carousel3.jpg"></a></li>
+      <li><a href="../build/img/carousel4.jpg"><img src="../build/img/carousel4.jpg"></a></li>
+      <li><a href="../build/img/carousel5.jpg"><img src="../build/img/carousel5.jpg"></a></li>
     </ul>
+    <!-- <button class="button prevBtn">
+        <i class="fas fa-arrow-circle-left"></i>
+    </button>
+    <button class="button nextBtn">
+        <i class="fas fa-arrow-circle-right"></i>
+    </button> -->
   </div> <!-- /Gallery Section -->
 
   <script src="https://code.jquery.com/jquery-2.2.4.js"></script>
