@@ -12,7 +12,7 @@ body {
 h1 {
   margin: 0;
   padding: 0;
-  font-size: 2.3rem;
+  font-size: 2.5rem;
   font-weight: 400;
   line-height: 2.5rem;
   color: black; }
@@ -70,8 +70,7 @@ a {
 .info-section {
   height: 1550px; }
   .info-section .info-wrapper {
-    border: 2px solid blue;
-    width: 968px;
+    width: 1200px;
     height: 100%;
     margin: auto; }
     .info-section .info-wrapper .info-containers {
@@ -97,11 +96,12 @@ a {
   background-color: white;
   display: flex; }
   .navbar .nav-wrapper {
-    width: 968px;
+    width: 1200px;
     margin: auto;
     display: flex;
     justify-content: space-between;
-    align-items: center; }
+    align-items: center;
+    position: relative; }
     .navbar .nav-wrapper .nav-title {
       background-image: url(../img/logo2.jpg);
       background-size: cover;
@@ -113,7 +113,7 @@ a {
       display: flex;
       flex-direction: row; }
       .navbar .nav-wrapper .nav-links ul .nav-item {
-        padding: .3rem 1rem; }
+        padding: .3rem .3rem .3rem 1rem; }
         .navbar .nav-wrapper .nav-links ul .nav-item:hover {
           cursor: pointer;
           background-color: #fde7d9;
@@ -187,13 +187,14 @@ a {
     padding-top: 2rem;
     height: auto; }
     .welcome-section .welcome-bottom .welcome-bottom-wrapper {
-      width: 968px;
+      width: 1200px;
       margin: auto;
       text-align: center;
       display: grid;
-      grid-template-columns: repeat(3, 1fr); }
+      grid-template-columns: repeat(3, 1fr);
+      grid-gap: 2rem; }
     .welcome-section .welcome-bottom .welcome-services {
-      padding: 1rem .5rem; }
+      padding: 1rem 0rem; }
       .welcome-section .welcome-bottom .welcome-services h2 {
         font-weight: 600;
         padding-bottom: .5rem; }
@@ -253,19 +254,21 @@ a {
 
 footer {
   height: 100px;
-  background-color: #fde7d9;
-  display: flex;
-  justify-content: space-between; }
-  footer #footer {
+  background-color: #fde7d9; }
+  footer .footer-container {
+    width: 1200px;
+    height: 100px;
+    margin: auto;
     display: flex;
-    align-items: center;
-    padding-left: 2rem; }
-  footer #footer-icons {
-    display: flex;
-    align-items: center;
-    padding-right: 2rem; }
-    footer #footer-icons a {
-      margin-left: .5rem; }
-      footer #footer-icons a:hover {
-        color: #e2620e;
-        transition: all .2s ease-out; }
+    justify-content: space-between; }
+    footer .footer-container #footer-brand {
+      display: flex;
+      align-items: center; }
+    footer .footer-container #footer-icons {
+      display: flex;
+      align-items: center; }
+      footer .footer-container #footer-icons a {
+        margin-left: .5rem; }
+        footer .footer-container #footer-icons a:hover {
+          color: #e2620e;
+          transition: all .2s ease-out; }
