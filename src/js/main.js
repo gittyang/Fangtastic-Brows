@@ -1,5 +1,5 @@
 
-// Press image to display
+// Press image to display w/ Jquery
 $(document).ready(function(){
   $('.slides a').click(function(e){
     e.preventDefault();
@@ -7,6 +7,7 @@ $(document).ready(function(){
   });
 });
 
+// Home Gallery Div
 const homeGallery = document.querySelector('.home-gallery');
 //Buttons
 const prevBtn = document.querySelector('#prevBtn');
@@ -35,6 +36,7 @@ homeGallery.addEventListener('click', (event) => {
   }
 });
 
+// Next Button Event
  nextBtn.addEventListener('click', () => {
 // Find match between display image and li images. Return to link variable.
   let link = findMatch();
@@ -48,14 +50,15 @@ homeGallery.addEventListener('click', (event) => {
   }
 // Take current link and find NEXT item link. Display it.
   let nextCousinLink = 
-  link
-  .parentNode
-  .nextElementSibling
-  .querySelector('a')
-  .href;
-display.src = nextCousinLink;  
+    link
+    .parentNode
+    .nextElementSibling
+    .querySelector('a')
+    .href;
+  display.src = nextCousinLink;  
 });
 
+// Previous Button Event
 prevBtn.addEventListener('click', () => {
   // Find match between display image and li images. Return to link variable.
     let link = findMatch();

@@ -20,16 +20,28 @@ h1 {
 h2 {
   margin: 0;
   padding: 0;
-  font-size: 1.3rem;
+  font-size: 1.5rem;
   font-weight: 400;
   line-height: 1.5rem;
   color: black; }
 
+h3 {
+  margin: 0;
+  padding: 0;
+  font-size: 1.3rem;
+  font-weight: 400;
+  line-height: 1.3rem;
+  color: black; }
+
 p {
   margin: 0;
-  padding: .5rem;
+  padding: 0rem;
   font-size: 1rem;
   line-height: 1.3rem; }
+
+ul {
+  margin: 0;
+  padding: 0; }
 
 li {
   list-style: none; }
@@ -54,6 +66,30 @@ a {
 
 .show {
   display: block; }
+
+.info-section {
+  height: 1550px; }
+  .info-section .info-wrapper {
+    border: 2px solid blue;
+    width: 968px;
+    height: 100%;
+    margin: auto; }
+    .info-section .info-wrapper .info-containers {
+      margin: 1rem; }
+      .info-section .info-wrapper .info-containers .info-procedure-items {
+        margin-bottom: 1.5rem; }
+        .info-section .info-wrapper .info-containers .info-procedure-items h2 {
+          font-weight: 600;
+          margin-bottom: .3rem; }
+        .info-section .info-wrapper .info-containers .info-procedure-items h3 {
+          font-weight: 600;
+          margin-bottom: .3rem; }
+        .info-section .info-wrapper .info-containers .info-procedure-items #info-ul li {
+          margin-left: 1.5rem;
+          list-style-type: circle; }
+        .info-section .info-wrapper .info-containers .info-procedure-items p {
+          margin-bottom: .2rem;
+          font-weight: 100; }
 
 .navbar {
   width: 100%;
@@ -157,7 +193,7 @@ a {
       display: grid;
       grid-template-columns: repeat(3, 1fr); }
     .welcome-section .welcome-bottom .welcome-services {
-      padding: 1rem 0; }
+      padding: 1rem .5rem; }
       .welcome-section .welcome-bottom .welcome-services h2 {
         font-weight: 600;
         padding-bottom: .5rem; }

@@ -172,7 +172,8 @@
     }
 
     .welcome-services {
-      padding: 1rem 0;
+      // border: 2px solid red;
+      padding: 1rem .5rem;
       
       h2 {
         font-weight: 600;
@@ -187,6 +188,7 @@
 
 }
 
+// Gallery Section //
 .home-gallery {
   height: 800px;
 
@@ -262,6 +264,7 @@
 
 }
 
+// Footer Section //
 footer {
   height: 100px;
   background-color: lighten(rgb(248, 186, 145), 15);
