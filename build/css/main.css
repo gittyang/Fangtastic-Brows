@@ -70,7 +70,7 @@ a {
 .landing-section-info {
   height: 600px;
   height: 600px;
-  background-image: url("../img/about3.jpg");
+  background-image: url("../img/brush.jpg");
   background-size: cover;
   background-attachment: fixed;
   background-repeat: no-repeat;
@@ -138,7 +138,7 @@ a {
 .landing-section-about {
   height: 600px;
   height: 600px;
-  background-image: url("../img/about3.jpg");
+  background-image: url("../img/about.jpg");
   background-size: cover;
   background-attachment: fixed;
   background-repeat: no-repeat;
@@ -172,7 +172,7 @@ a {
 .landing-section-contact {
   height: 600px;
   height: 600px;
-  background-image: url("../img/about3.jpg");
+  background-image: url("../img/brush.jpg");
   background-size: cover;
   background-attachment: fixed;
   background-repeat: no-repeat;
@@ -205,12 +205,49 @@ a {
 
 .contact-section {
   margin: auto;
-  height: auto;
+  height: 1300px;
   width: 1200px; }
-
-#map-section #map {
-  width: 50%;
-  margin: auto; }
+  .contact-section .contact-container {
+    height: 800px;
+    text-align: center; }
+    .contact-section .contact-container .contact-me {
+      padding: 1rem;
+      margin-bottom: 2rem; }
+      .contact-section .contact-container .contact-me h1 {
+        margin-bottom: 1rem; }
+    .contact-section .contact-container .contact-boxes {
+      height: 120px;
+      margin-bottom: 3rem;
+      display: grid;
+      grid-template-columns: repeat(4, 1fr); }
+      .contact-section .contact-container .contact-boxes .box-item .contact-icons {
+        height: 50px;
+        padding: .5rem; }
+      .contact-section .contact-container .contact-boxes .box-item .contact-info {
+        height: auto;
+        padding-top: .5rem; }
+      .contact-section .contact-container .contact-boxes .box-line {
+        border-right: 1px solid black; }
+    .contact-section .contact-container .contact-form {
+      height: 500px;
+      width: 700px;
+      text-align: left;
+      margin: auto; }
+      .contact-section .contact-container .contact-form .forms {
+        padding-bottom: 1rem; }
+        .contact-section .contact-container .contact-form .forms .form-top {
+          padding: .25rem;
+          margin-top: .5rem;
+          height: 30px;
+          width: 100%; }
+        .contact-section .contact-container .contact-form .forms .form-bottom {
+          padding: .25rem;
+          margin-top: .5rem;
+          height: 200px;
+          width: 100%; }
+  .contact-section #map-section #map {
+    width: 50%;
+    margin: auto; }
 
 .navbar {
   width: 100%;

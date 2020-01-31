@@ -2,7 +2,7 @@
 // Info/Treatment Page
 .landing-section-info {
   height: 600px;
-  @include headingImg('../img/about.jpg');
+  @include headingImg('../img/brush.jpg');
   @include landingContainer();
 }
 
@@ -85,24 +85,97 @@
 // Contact Page
 .landing-section-contact {
   height: 600px;
-  @include headingImg('../img/about.jpg');
+  @include headingImg('../img/brush.jpg');
   @include landingContainer();
 }
 
 .contact-section {
+  // border: 2px solid pink;
   margin: auto;
-  height: auto;
+  height: 1300px; 
   width: 1200px;
-}
 
-#map-section {
-  // height: 450px;
-  // width: 600px;
-  // margin: auto;
 
-  #map {
-    // height: 500px;
-    width: 50%;
-    margin: auto;
+  .contact-container {
+    // border: 2px solid red;
+    height: 800px;
+    text-align: center;
+
+    .contact-me {
+      // border: 2px solid blue;
+      padding: 1rem;
+      margin-bottom: 2rem;
+      h1 {
+        margin-bottom: 1rem;
+      }
+    }
+
+    .contact-boxes {
+      // border: 2px solid green;
+      height: 120px;
+      margin-bottom: 3rem;
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+
+      .box-item {
+        .contact-icons {
+          // border: 2px solid red;
+          height: 50px;
+          padding: .5rem;
+        }
+
+        .contact-info {
+          // border: 2px solid blue;
+          height: auto;
+          padding-top: .5rem;
+        }
+      }
+
+      .box-line {
+        border-right: 1px solid black;
+      }
+    }
+
+    .contact-form {
+      // border: 2px solid orange;
+      height: 500px;
+      width: 700px;
+      text-align: left;
+      margin: auto;
+
+      .forms {
+        // border: 2px solid red;
+        padding-bottom: 1rem;
+        // margin-bottom: .5em;
+
+        .form-top {
+          padding: .25rem;
+          margin-top: .5rem;
+          height: 30px;
+          width: 100%
+        }
+        .form-bottom {
+          padding: .25rem;
+          margin-top: .5rem;
+          height: 200px;
+          width: 100%
+        }
+
+      }
+    }
   }
+  
+  #map-section {
+    // border: 2px solid blue;
+    // height: 450px;
+    // width: 600px;
+    // margin: auto;
+  
+    #map {
+      // height: 500px;
+      width: 50%;
+      margin: auto;
+    }
+  }
+
 }
