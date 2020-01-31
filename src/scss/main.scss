@@ -88,60 +88,9 @@
 
 // Landing Section //
 .landing-section {
-  // border: 2px solid purple;
   height: 600px;
-  background-image: url(../img/brush2.jpg);
-  background-size: cover;
-  background-attachment: fixed;
-  background-repeat: no-repeat;
-  position: relative;
-
-  &:after {
-    content: '';
-    position: absolute;
-    top: 0;
-    right: 0;
-    background: rgba($color: black, $alpha: .6);
-    height: 100%;
-    width: 100%;
-    z-index: 1;
-  }
-
-  .landing-container {
-    // border: 2px solid green;
-    // background-color: rgb(250, 237, 237);
-    height: 300px;
-    width: 400px;
-    position: absolute;
-    top: 30%;
-    right: 10%;
-    z-index: 2;
-
-    .landing {
-      // border: 5px solid yellow;
-      // height: 100px;
-      // padding-bottom: 1rem;
-      h1, h2 {
-        color: white;
-      }
-    }
-
-    .top {
-      // border: 2px solid red;
-      z-index: 3;
-      padding-bottom: 1rem;
-      #landing-h1 {
-        font-size: 1.3rem;
-      }
-    }
-
-    .bottom {
-      // border: 2px solid blue;
-      padding-bottom: 1.5rem;
-    }
-
-  }
-
+  @include headingImg('../img/brush.jpg');
+  @include landingContainer();
 }
 
 // Welcome Section //
@@ -272,7 +221,7 @@
 // Footer Section //
 footer {
   height: 100px;
-  background-color: lighten(rgb(248, 186, 145), 15);
+  background-color: lighten(rgb(248, 186, 145), 10);
 
   .footer-container {
     // border: 2px solid red;

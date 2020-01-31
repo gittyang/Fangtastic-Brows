@@ -1,3 +1,11 @@
+
+// Info/Treatment Page
+.landing-section-info {
+  height: 600px;
+  @include headingImg('../img/about.jpg');
+  @include landingContainer();
+}
+
 .info-section {
   // border: 2px solid red;
   height: 1550px;
@@ -42,4 +50,59 @@
         }
       }
     }
+}
+
+// Services Page
+
+.services-section {
+  // border: 2px solid red;
+  // background-color: lighten(rgb(248, 186, 145), 15);
+  // color: white;
+  margin: auto;
+  width: 1200px;
+  height: 1000px;
+
+  .services-items {
+    // border: 2px solid blue;
+    height: 150px;
+    margin-bottom: 2rem;
+    padding: 1rem;
+
+    h2 {
+      font-weight: 600;
+    }
+  }
+}
+
+// About Page
+
+.landing-section-about {
+  height: 600px;
+  @include headingImg('../img/about.jpg');
+  @include landingContainer();
+}
+
+// Contact Page
+.landing-section-contact {
+  height: 600px;
+  @include headingImg('../img/about.jpg');
+  @include landingContainer();
+}
+
+.contact-section {
+  margin: auto;
+  height: auto;
+  width: 1200px;
+}
+
+#map-section {
+  // height: 450px;
+  // width: 600px;
+  // margin: auto;
+
+  #map {
+    // height: 500px;
+    width: 50%;
+    margin: auto;
+  }
 }
