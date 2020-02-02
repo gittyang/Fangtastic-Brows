@@ -55,7 +55,8 @@ a {
 
 .bwButton {
   border: 1px solid black;
-  padding: .3rem; }
+  padding: .3rem;
+  font-size: 1rem; }
   .bwButton:hover {
     background-color: #f8ba91;
     transition: all .2s ease-out;
@@ -69,7 +70,7 @@ a {
 
 .landing-section-info {
   height: 600px;
-  height: 600px;
+  height: 500px;
   background-image: url("../img/brush.jpg");
   background-size: cover;
   background-attachment: fixed;
@@ -137,7 +138,7 @@ a {
 
 .landing-section-about {
   height: 600px;
-  height: 600px;
+  height: 500px;
   background-image: url("../img/about.jpg");
   background-size: cover;
   background-attachment: fixed;
@@ -171,7 +172,7 @@ a {
 
 .landing-section-contact {
   height: 600px;
-  height: 600px;
+  height: 500px;
   background-image: url("../img/brush.jpg");
   background-size: cover;
   background-attachment: fixed;
@@ -242,8 +243,7 @@ a {
           width: 100%; }
         .contact-section .contact-container .contact-form .forms .form-bottom {
           padding: .25rem;
-          margin-top: .5rem;
-          height: 200px;
+          height: 100px;
           width: 100%; }
   .contact-section #map-section #map {
     width: 50%;
@@ -251,40 +251,42 @@ a {
 
 .navbar {
   width: 100%;
-  height: 160px;
+  height: 250px;
   background-color: white;
   display: flex; }
   .navbar .nav-wrapper {
     width: 1200px;
     margin: auto;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    position: relative; }
+    display: block; }
     .navbar .nav-wrapper .nav-title {
       background-image: url(../img/logo2.jpg);
       background-size: cover;
-      width: 350px;
-      height: 150px; }
-      .navbar .nav-wrapper .nav-title #nav-title-a {
-        font-size: 2rem; }
-    .navbar .nav-wrapper .nav-links ul {
-      display: flex;
-      flex-direction: row; }
-      .navbar .nav-wrapper .nav-links ul .nav-item {
-        padding: .3rem .3rem .3rem 1rem; }
-        .navbar .nav-wrapper .nav-links ul .nav-item:hover {
-          cursor: pointer;
-          background-color: #fde7d9;
-          transition: all .2s ease-out; }
-      .navbar .nav-wrapper .nav-links ul .nav-item-bn {
-        margin-left: 1rem; }
-      .navbar .nav-wrapper .nav-links ul .bwButton {
-        border: 1px solid black;
-        padding: .3rem; }
-        .navbar .nav-wrapper .nav-links ul .bwButton:hover {
-          background-color: #f8ba91;
-          transition: all .2s ease-out; }
+      width: 375px;
+      height: 160px;
+      margin: auto;
+      margin-bottom: 1.5rem; }
+    .navbar .nav-wrapper .nav-links {
+      margin: auto;
+      margin-bottom: 1rem; }
+      .navbar .nav-wrapper .nav-links ul {
+        display: flex;
+        flex-direction: row;
+        justify-content: center; }
+        .navbar .nav-wrapper .nav-links ul .nav-item {
+          padding: .3rem 2rem .3rem 2rem;
+          font-size: 1.5rem; }
+          .navbar .nav-wrapper .nav-links ul .nav-item:hover {
+            cursor: pointer;
+            background-color: #fbd8c1;
+            transition: all .2s ease-out; }
+        .navbar .nav-wrapper .nav-links ul .nav-item-bn {
+          margin-left: 2rem; }
+        .navbar .nav-wrapper .nav-links ul .bwButton {
+          border: 1px solid black;
+          padding: .3rem; }
+          .navbar .nav-wrapper .nav-links ul .bwButton:hover {
+            background-color: #f6ab79;
+            transition: all .2s ease-out; }
   .navbar .toggle-button {
     position: absolute;
     top: 1rem;
@@ -302,8 +304,7 @@ a {
       padding: 0; }
 
 .landing-section {
-  height: 600px;
-  height: 600px;
+  height: 500px;
   background-image: url("../img/brush.jpg");
   background-size: cover;
   background-attachment: fixed;
@@ -338,13 +339,15 @@ a {
 .welcome-section {
   height: 550px; }
   .welcome-section .welcome {
-    height: 125px;
     text-align: center;
-    padding-top: 3rem; }
+    padding: 2rem; }
   .welcome-section .top {
     text-transform: uppercase; }
+  .welcome-section .middle .middle-wrapper {
+    width: 768px;
+    margin: auto; }
   .welcome-section .welcome-bottom {
-    padding-top: 2rem;
+    padding: 2rem;
     height: auto; }
     .welcome-section .welcome-bottom .welcome-bottom-wrapper {
       width: 1200px;
@@ -353,13 +356,11 @@ a {
       display: grid;
       grid-template-columns: repeat(3, 1fr);
       grid-gap: 2rem; }
-    .welcome-section .welcome-bottom .welcome-services {
-      padding: 1rem 0rem; }
-      .welcome-section .welcome-bottom .welcome-services h2 {
-        font-weight: 600;
-        padding-bottom: .5rem; }
-      .welcome-section .welcome-bottom .welcome-services p {
-        padding-bottom: 1rem; }
+    .welcome-section .welcome-bottom .welcome-services h2 {
+      font-weight: 600;
+      padding-bottom: .5rem; }
+    .welcome-section .welcome-bottom .welcome-services p {
+      padding-bottom: 1rem; }
 
 .home-gallery {
   height: 800px; }

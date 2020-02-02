@@ -1,5 +1,5 @@
 
-// Info/Treatment Page
+// ***Info/Treatment Page*** //
 .landing-section-info {
   height: 600px;
   @include headingImg('../img/brush.jpg');
@@ -52,8 +52,8 @@
     }
 }
 
-// Services Page
 
+// ***Services Page*** //
 .services-section {
   // border: 2px solid red;
   // background-color: lighten(rgb(248, 186, 145), 15);
@@ -74,7 +74,8 @@
   }
 }
 
-// About Page
+
+// ***About Page*** //
 
 .landing-section-about {
   height: 600px;
@@ -82,7 +83,8 @@
   @include landingContainer();
 }
 
-// Contact Page
+
+// ***Contact Page*** //
 .landing-section-contact {
   height: 600px;
   @include headingImg('../img/brush.jpg');
@@ -156,8 +158,8 @@
         }
         .form-bottom {
           padding: .25rem;
-          margin-top: .5rem;
-          height: 200px;
+          
+          height: 100px;
           width: 100%
         }
 
@@ -177,5 +179,4 @@
       margin: auto;
     }
   }
-
 }
