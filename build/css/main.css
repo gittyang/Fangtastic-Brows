@@ -1,3 +1,11 @@
+@keyframes moveToRight {
+  0% {
+    transform: translateX(-120px);
+    opacity: 0; }
+  100% {
+    transform: translateX(0);
+    opacity: 1; } }
+
 * {
   box-sizing: border-box; }
 
@@ -55,6 +63,7 @@ a {
 
 .bwButton {
   border: 1px solid black;
+  border-radius: 2px;
   padding: .3rem;
   font-size: 1rem; }
   .bwButton:hover {
@@ -70,12 +79,13 @@ a {
 
 .landing-section-info {
   height: 600px;
-  height: 500px;
+  height: 450px;
   background-image: url("../img/brush.jpg");
   background-size: cover;
   background-attachment: fixed;
   background-repeat: no-repeat;
-  position: relative; }
+  position: relative;
+  z-index: -1; }
   .landing-section-info:after {
     content: '';
     position: absolute;
@@ -138,12 +148,13 @@ a {
 
 .landing-section-about {
   height: 600px;
-  height: 500px;
+  height: 450px;
   background-image: url("../img/about.jpg");
   background-size: cover;
   background-attachment: fixed;
   background-repeat: no-repeat;
-  position: relative; }
+  position: relative;
+  z-index: -1; }
   .landing-section-about:after {
     content: '';
     position: absolute;
@@ -172,12 +183,13 @@ a {
 
 .landing-section-contact {
   height: 600px;
-  height: 500px;
+  height: 450px;
   background-image: url("../img/brush.jpg");
   background-size: cover;
   background-attachment: fixed;
   background-repeat: no-repeat;
-  position: relative; }
+  position: relative;
+  z-index: -1; }
   .landing-section-contact:after {
     content: '';
     position: absolute;
@@ -251,12 +263,12 @@ a {
 
 .navbar {
   width: 100%;
-  height: 250px;
+  height: 225px;
   background-color: white;
   display: flex; }
   .navbar .nav-wrapper {
     width: 1200px;
-    margin: auto;
+    margin: 1rem auto 0;
     display: block; }
     .navbar .nav-wrapper .nav-title {
       background-image: url(../img/logo2.jpg);
@@ -264,29 +276,35 @@ a {
       width: 375px;
       height: 160px;
       margin: auto;
-      margin-bottom: 1.5rem; }
-    .navbar .nav-wrapper .nav-links {
-      margin: auto;
       margin-bottom: 1rem; }
+    .navbar .nav-wrapper .nav-links {
+      margin: auto; }
       .navbar .nav-wrapper .nav-links ul {
         display: flex;
         flex-direction: row;
         justify-content: center; }
-        .navbar .nav-wrapper .nav-links ul .nav-item {
+        .navbar .nav-wrapper .nav-links ul .nav-li .nav-item {
           padding: .3rem 2rem .3rem 2rem;
-          font-size: 1.5rem; }
-          .navbar .nav-wrapper .nav-links ul .nav-item:hover {
+          font-size: 1.5rem;
+          border-radius: 2px;
+          display: block; }
+          .navbar .nav-wrapper .nav-links ul .nav-li .nav-item:hover {
             cursor: pointer;
             background-color: #fbd8c1;
             transition: all .2s ease-out; }
-        .navbar .nav-wrapper .nav-links ul .nav-item-bn {
-          margin-left: 2rem; }
-        .navbar .nav-wrapper .nav-links ul .bwButton {
-          border: 1px solid black;
-          padding: .3rem; }
-          .navbar .nav-wrapper .nav-links ul .bwButton:hover {
-            background-color: #f6ab79;
-            transition: all .2s ease-out; }
+        .navbar .nav-wrapper .nav-links ul .nav-li .dropdown-container {
+          background-color: #fef6f1;
+          width: fit-content;
+          margin-right: auto;
+          border-radius: 2px; }
+          .navbar .nav-wrapper .nav-links ul .nav-li .dropdown-container .dropdown {
+            border: 2px solid blue;
+            padding: .5rem 2rem .5rem 2rem;
+            font-size: 1.2rem; }
+            .navbar .nav-wrapper .nav-links ul .nav-li .dropdown-container .dropdown:hover {
+              background-color: red;
+              cursor: pointer;
+              transition: all .2s ease-out; }
   .navbar .toggle-button {
     position: absolute;
     top: 1rem;
@@ -304,21 +322,7 @@ a {
       padding: 0; }
 
 .landing-section {
-  height: 500px;
-  background-image: url("../img/brush.jpg");
-  background-size: cover;
-  background-attachment: fixed;
-  background-repeat: no-repeat;
   position: relative; }
-  .landing-section:after {
-    content: '';
-    position: absolute;
-    top: 0;
-    right: 0;
-    background: rgba(0, 0, 0, 0.6);
-    height: 100%;
-    width: 100%;
-    z-index: 1; }
   .landing-section .landing-container {
     height: 300px;
     width: 400px;
@@ -335,6 +339,23 @@ a {
         font-size: 1.3rem; }
     .landing-section .landing-container .bottom {
       padding-bottom: 1.5rem; }
+  .landing-section .landing-parallax {
+    height: 450px;
+    background-image: url("../img/brush.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    position: relative;
+    z-index: -1; }
+    .landing-section .landing-parallax:after {
+      content: '';
+      position: absolute;
+      top: 0;
+      right: 0;
+      background: rgba(0, 0, 0, 0.6);
+      height: 100%;
+      width: 100%;
+      z-index: 1; }
 
 .welcome-section {
   height: 550px; }

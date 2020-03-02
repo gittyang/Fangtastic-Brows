@@ -5,14 +5,15 @@
 .navbar {
   // border: 2px solid brown;
   width: 100%;
-  height: 250px;
+  height: 225px;
   background-color: white;
   display: flex;
 
   .nav-wrapper {
     // border: 2px solid pink;
     width: 1200px;
-    margin: auto;
+    margin: 1rem auto 0;
+    // margin: 1rem auto;
     display: block;
     // justify-content: space-between;
     // align-items: center;
@@ -25,43 +26,55 @@
       width: 375px;
       height: 160px;
       margin: auto;
-      margin-bottom: 1.5rem;
+      margin-bottom: 1rem;
     }
   
     .nav-links {
       // border: 2px solid blue;
       margin: auto;
-      margin-bottom: 1rem;
   
       ul {
         // border: 2px solid orange;
         display: flex;
         flex-direction: row;
         justify-content: center;
-  
-        .nav-item {
-          // border: 2px solid green;
-          padding: .3rem 2rem .3rem 2rem;
-          font-size: 1.5rem;
-          &:hover {
-            cursor: pointer;
-            background-color: lighten(rgb(248, 186, 145), 10);
-            @include easeOut();
+        
+        .nav-li {
+          // border: 1px solid green;
+
+          .nav-item {
+            // border: 2px solid green;
+            padding: .3rem 2rem .3rem 2rem;
+            font-size: 1.5rem;
+            border-radius: 2px;
+            display: block;
+
+            &:hover {
+              cursor: pointer;
+              background-color: lighten(rgb(248, 186, 145), 10);
+              @include easeOut();
+            }
           }
-        }
 
-        .nav-item-bn {
-          margin-left: 2rem;
-        }
+          .dropdown-container {
+            // border: 2px solid red;
+            background-color: lighten(rgb(248, 186, 145), 20);
+            width: fit-content;
+            margin-right: auto;
+            border-radius: 2px;
 
-        .bwButton {
-          border: 1px solid black;
-          padding: .3rem;
+            .dropdown {
+              border: 2px solid blue;
+              padding: .5rem 2rem .5rem 2rem;
+              font-size: 1.2rem;
 
-          &:hover {
-            background-color: darken(rgb(248, 186, 145), 5);
-            @include easeOut();
-          }
+              &:hover {
+                background-color: red;
+                cursor: pointer;
+                @include easeOut();
+              }
+            }
+          }          
         }
       }
     }
@@ -90,8 +103,14 @@
 
 // Landing Section //
 .landing-section {
-  @include headingImg('../img/brush.jpg');
+  // border: 2px solid green;
+  position: relative;
   @include landingContainer();
+  .landing-parallax {
+    // border: 2px solid red;
+    @include headingImg('../img/brush.jpg');
+  }
+
 }
 
 // Welcome Section //
