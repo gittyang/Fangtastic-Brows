@@ -41,6 +41,9 @@
         
         .nav-li {
           // border: 1px solid green;
+          &:hover .dropdown-container {
+            display: block;
+          }
 
           .nav-item {
             // border: 2px solid green;
@@ -51,29 +54,43 @@
 
             &:hover {
               cursor: pointer;
-              background-color: lighten(rgb(248, 186, 145), 10);
+              background-color: lighten(rgb(248, 186, 145), 5);
               @include easeOut();
             }
           }
 
           .dropdown-container {
             // border: 2px solid red;
-            background-color: lighten(rgb(248, 186, 145), 20);
             width: fit-content;
             margin-right: auto;
-            border-radius: 2px;
+            border-radius: 10px;
+            display: none;
 
-            .dropdown {
-              border: 2px solid blue;
-              padding: .5rem 2rem .5rem 2rem;
-              font-size: 1.2rem;
+            ul {
+              display: flex;
+              flex-direction: column;
 
-              &:hover {
-                background-color: red;
-                cursor: pointer;
-                @include easeOut();
-              }
+              .dropdown {
+                // border: 2px solid blue;
+                background-color: lighten(rgb(248, 186, 145), 20);
+                padding: .5rem 2rem .5rem 2rem;
+                font-size: 1.2rem;
+                color: black;
+                z-index: 1;
+
+                &:last-child {
+                  border-radius: 0 0 2px 2px;
+                }
+
+                &:hover {
+                  background-color: lighten(rgb(248, 186, 145), 10);
+                  cursor: pointer;
+                  @include easeOut();
+                }
+              }              
             }
+
+
           }          
         }
       }
@@ -201,6 +218,7 @@
       height: 100%;
       border: 10px solid darken(rgb(248, 186, 145), 5);
       box-shadow: 2px 2px 10px black;
+      border-radius: 2px;
     }
 
     .fas {
@@ -242,6 +260,7 @@
         height: 180px;
         border: 10px solid darken(rgb(248, 186, 145), 5);
         box-shadow: 2px 2px 10px black;
+        border-radius: 2px;
       }
     }
   }

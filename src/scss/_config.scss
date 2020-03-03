@@ -1,57 +1,13 @@
+
+// Colors //
 $primary-color: rgb(32, 35, 65);
 $secondary-color: rgb(0, 0, 0);
 $tertiary-color: rgb(121, 50, 128);
 $background-opacity: 0.9;
 
+// Add ins //
 @mixin easeOut() {
   transition: all .2s ease-out;
-}
-
-@mixin headingImg($image) {
-  height: 450px;
-  background-image: url('#{$image}');
-  background-size: cover;
-  background-attachment: fixed;
-  background-repeat: no-repeat;
-  position: relative;
-  z-index: -1;
-
-  &:after {
-    content: '';
-    position: absolute;
-    top: 0;
-    right: 0;
-    background: rgba($color: black, $alpha: .6);
-    height: 100%;
-    width: 100%;
-    z-index: 1;
-  }
-}
-
-@mixin landingContainer() {
-  .landing-container {
-    height: 300px;
-    width: 400px;
-    position: absolute;
-    top: 30%;
-    right: 10%;
-    z-index: 2;
-    .landing {
-      h1, h2 {
-        color: white;
-      }
-    }
-    .top {
-      z-index: 3;
-      padding-bottom: 1rem;
-      #landing-h1 {
-        font-size: 1.3rem;
-      }
-    }
-    .bottom {
-      padding-bottom: 1.5rem;
-    }
-  }
 }
 
 @keyframes moveToRight {
@@ -66,6 +22,15 @@ $background-opacity: 0.9;
   }
 }
 
+.hide {
+  display: none;
+}
+
+.show {
+  display: block;
+}
+
+// Global //
 * {
   box-sizing: border-box;
 }
@@ -145,10 +110,48 @@ a {
   }
 }
 
-.hide {
-  display: none;
+// Classes
+@mixin headingImg($image) {
+  height: 450px;
+  background-image: url('#{$image}');
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  position: relative;
+  z-index: -1;
+
+  &:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    background: rgba($color: black, $alpha: .6);
+    height: 100%;
+    width: 100%;
+  }
 }
 
-.show {
-  display: block;
+@mixin landingContainer() {
+  .landing-container {
+    height: 300px;
+    width: 400px;
+    position: absolute;
+    top: 30%;
+    right: 10%;
+    z-index: 1;
+    .landing {
+      h1, h2 {
+        color: white;
+      }
+    }
+    .top {
+      padding-bottom: 1rem;
+      #landing-h1 {
+        font-size: 1.3rem;
+      }
+    }
+    .bottom {
+      padding-bottom: 1.5rem;
+    }
+  }
 }
