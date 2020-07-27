@@ -1,32 +1,63 @@
 
 // ***Info/Treatment Page*** //
-.landing-section-info {
-  height: 600px;
-  @include headingImg('../img/brush.jpg');
-  @include landingContainer();
+.info {
+  // border: 2px solid red;
+  h4{
+    color: white;
+  }
+  // height: 600px;
+  // @include headingImg('../img/brush.jpg');
+  // @include landingContainer();
 }
 
 .info-section {
   // border: 2px solid red;
   height: 1550px;
+  padding: 3rem;
 
     .info-wrapper {
-      // border: 2px solid blue;
+      border: 2px solid lighten(rgb(248, 186, 145), 5);
       width: 1200px;
       height: 100%;
       margin: auto;
+      padding: 2rem;
 
       .info-containers {
-        // border: 2px solid pink;
-        margin: 1rem;
+        // border: 2px solid red;
+        // margin: 1rem;
 
         .info-procedure-items {
-          // border: 2px solid purple;
+          border: 2px solid purple;
           margin-bottom: 1.5rem;
+          padding: 2rem;
+          position: relative;
+
+          &::before {
+            content: '';
+            width: 20px;
+            height: 20px;
+            background: black;
+            position: absolute;
+            left: 15px;
+            top: 30%;
+            transform: translate(-50%, 50%);
+            z-index: 1;
+          }
+
+          .info-item-heading {
+            border: 2px solid red;
+          }
+
+          .info-item-body {
+            border: 2px solid green;
+            display: none;
+          }
+
           h2 {
             // border: 2px solid green;
             font-weight: 600;
             margin-bottom: .3rem;
+            // color: white;
           }
 
           h3 {
@@ -34,6 +65,7 @@
             font-weight: 600;
             margin-bottom: .3rem;
           }
+
 
           #info-ul li {
             // border: 2px solid brown;

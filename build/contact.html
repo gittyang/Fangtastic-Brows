@@ -133,10 +133,52 @@
         <div class="forms">
           <label for="">Your Message</label><br>
           <textarea type="" class="form-bottom" id=""></textarea>
-          <input type="submit" value="submit">
+          <!-- <input type="submit" value="submit"> -->
         </div>
+
+        <div class="g-recaptcha" data-sitekey="6LfbuOMUAAAAALu5Z1cpd6py8GAF07TuypOtf_PQ"></div>
+        <br/>
+        <input type="submit" value="Submit">
       </form>
     </div>
+
+    <?php 
+
+      if (isset($_POST['submit'])) {
+        
+      $userName = $_POST['name'];
+      $userEmail = $_POST['email']
+      $userMessage = $_POST['message'];
+      
+      $emailFrom = 'nreply@fnagtasticbrows.com';
+      $emailSubject = "New Form Submission";
+      $emailBody = 
+      
+        "Name: $userName.\n".
+        "Email Id: $userEmail.\n".
+        "User Message: $userMessage.\n";
+
+      $mailTo = "ttyang251@gmail.com";
+      $headers = "From: $emailFrom \r\n";
+
+      $secretKey = "6LfbuOMUAAAAAOXNyofK4PHoX-n6hSFVJA0FDdAy";
+      $responseKey = $_POST['g-recaptcha-response'];
+      $userIp = $_SERVER[''];
+      $url = " https://www.google.com/recaptcha/api/siteverify?secret=$secretKey&response=$responseKey&remoteip=$userIp";
+
+
+      $reponse = file_get_contents($url);
+      $response = json.decode($reponse);
+      
+      if ($response->success) {
+
+        mail($mailTo, $emailSubject, $emailBody, $headers);
+        echo "Message sent successfully";
+      } else {
+          echo "Invalid captcha, please try again"
+      }
+
+    ?>
   </div>
 
   <!-- Google Embed Map -->
@@ -155,6 +197,15 @@
   <script async defer src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap"
   type="text/javascript">
   </script>
+
+  <!-- <script src="https://www.google.com/recaptcha/api.js?render=_reCAPTCHA_site_key"></script>
+  <script>
+  grecaptcha.ready(function() {
+      grecaptcha.execute('_reCAPTCHA_site_key_', {action: 'homepage'}).then(function(token) {
+        ...
+      });
+  });
+  </script> -->
 </body>
 
 <footer>

@@ -132,8 +132,10 @@
 
 // Welcome Section //
 .welcome-section {
-  // border: 2px solid orange;
+  // border: 2px solid orange; 
   height: 550px;
+  width: 1200px;
+  margin: auto;
 
   .welcome {
     // border: 2px solid red;
@@ -157,12 +159,12 @@
 
   .welcome-bottom {
     // border: 2px solid red;
-    padding: 2rem;
+    padding: 2rem 0;
     height: auto;
 
     .welcome-bottom-wrapper {
       // border: 2px solid orange;
-      width: 1200px;
+      // width: 1200px;
       margin: auto;
       text-align: center;
       display: grid;

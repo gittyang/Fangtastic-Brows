@@ -47,6 +47,14 @@ h3 {
   line-height: 1.3rem;
   color: black; }
 
+h4 {
+  margin: 0;
+  padding: 0;
+  font-size: 1.1rem;
+  font-weight: 400;
+  line-height: 1.3rem;
+  color: black; }
+
 p {
   margin: 0;
   padding: 0rem;
@@ -77,61 +85,50 @@ a {
     transition: all .2s ease-out;
     cursor: pointer; }
 
-.landing-section-info {
-  height: 600px;
-  height: 450px;
-  background-image: url("../img/brush.jpg");
-  background-size: cover;
-  background-attachment: fixed;
-  background-repeat: no-repeat;
-  position: relative;
-  z-index: -1; }
-  .landing-section-info:after {
-    content: '';
-    position: absolute;
-    top: 0;
-    right: 0;
-    background: rgba(0, 0, 0, 0.6);
-    height: 100%;
-    width: 100%; }
-  .landing-section-info .landing-container {
-    height: 300px;
-    width: 400px;
-    position: absolute;
-    top: 30%;
-    right: 10%;
-    z-index: 1; }
-    .landing-section-info .landing-container .landing h1, .landing-section-info .landing-container .landing h2 {
-      color: white; }
-    .landing-section-info .landing-container .top {
-      padding-bottom: 1rem; }
-      .landing-section-info .landing-container .top #landing-h1 {
-        font-size: 1.3rem; }
-    .landing-section-info .landing-container .bottom {
-      padding-bottom: 1.5rem; }
+.info h4 {
+  color: white; }
 
 .info-section {
-  height: 1550px; }
+  height: 1550px;
+  padding: 3rem; }
   .info-section .info-wrapper {
+    border: 2px solid #fac9a9;
     width: 1200px;
     height: 100%;
-    margin: auto; }
-    .info-section .info-wrapper .info-containers {
-      margin: 1rem; }
-      .info-section .info-wrapper .info-containers .info-procedure-items {
-        margin-bottom: 1.5rem; }
-        .info-section .info-wrapper .info-containers .info-procedure-items h2 {
-          font-weight: 600;
-          margin-bottom: .3rem; }
-        .info-section .info-wrapper .info-containers .info-procedure-items h3 {
-          font-weight: 600;
-          margin-bottom: .3rem; }
-        .info-section .info-wrapper .info-containers .info-procedure-items #info-ul li {
-          margin-left: 1.5rem;
-          list-style-type: circle; }
-        .info-section .info-wrapper .info-containers .info-procedure-items p {
-          margin-bottom: .2rem;
-          font-weight: 100; }
+    margin: auto;
+    padding: 2rem; }
+    .info-section .info-wrapper .info-containers .info-procedure-items {
+      border: 2px solid purple;
+      margin-bottom: 1.5rem;
+      padding: 2rem;
+      position: relative; }
+      .info-section .info-wrapper .info-containers .info-procedure-items::before {
+        content: '';
+        width: 20px;
+        height: 20px;
+        background: black;
+        position: absolute;
+        left: 15px;
+        top: 30%;
+        transform: translate(-50%, 50%);
+        z-index: 1; }
+      .info-section .info-wrapper .info-containers .info-procedure-items .info-item-heading {
+        border: 2px solid red; }
+      .info-section .info-wrapper .info-containers .info-procedure-items .info-item-body {
+        border: 2px solid green;
+        display: none; }
+      .info-section .info-wrapper .info-containers .info-procedure-items h2 {
+        font-weight: 600;
+        margin-bottom: .3rem; }
+      .info-section .info-wrapper .info-containers .info-procedure-items h3 {
+        font-weight: 600;
+        margin-bottom: .3rem; }
+      .info-section .info-wrapper .info-containers .info-procedure-items #info-ul li {
+        margin-left: 1.5rem;
+        list-style-type: circle; }
+      .info-section .info-wrapper .info-containers .info-procedure-items p {
+        margin-bottom: .2rem;
+        font-weight: 100; }
 
 .services-section {
   margin: auto;
@@ -163,7 +160,7 @@ a {
     width: 100%; }
   .landing-section-about .landing-container {
     height: 300px;
-    width: 400px;
+    width: 450px;
     position: absolute;
     top: 30%;
     right: 10%;
@@ -196,7 +193,7 @@ a {
     width: 100%; }
   .landing-section-contact .landing-container {
     height: 300px;
-    width: 400px;
+    width: 450px;
     position: absolute;
     top: 30%;
     right: 10%;
@@ -328,7 +325,7 @@ a {
   position: relative; }
   .landing-section .landing-container {
     height: 300px;
-    width: 400px;
+    width: 450px;
     position: absolute;
     top: 30%;
     right: 10%;
@@ -359,7 +356,9 @@ a {
       width: 100%; }
 
 .welcome-section {
-  height: 550px; }
+  height: 550px;
+  width: 1200px;
+  margin: auto; }
   .welcome-section .welcome {
     text-align: center;
     padding: 2rem; }
@@ -369,10 +368,9 @@ a {
     width: 768px;
     margin: auto; }
   .welcome-section .welcome-bottom {
-    padding: 2rem;
+    padding: 2rem 0;
     height: auto; }
     .welcome-section .welcome-bottom .welcome-bottom-wrapper {
-      width: 1200px;
       margin: auto;
       text-align: center;
       display: grid;
