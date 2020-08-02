@@ -24,33 +24,37 @@
 
       .info-containers {
         // border: 2px solid red;
-        // margin: 1rem;
 
         .info-procedure-items {
-          border: 2px solid purple;
+          // border: 2px solid purple;
           margin-bottom: 1.5rem;
           padding: 2rem;
-          position: relative;
 
-          &::before {
-            content: '';
-            width: 20px;
-            height: 20px;
-            background: black;
-            position: absolute;
-            left: 15px;
-            top: 30%;
-            transform: translate(-50%, 50%);
-            z-index: 1;
-          }
+          
 
           .info-item-heading {
-            border: 2px solid red;
-          }
+            // border: 2px solid red;
+            position: relative;
 
-          .info-item-body {
-            border: 2px solid green;
-            display: none;
+            .faq-wrapper {
+              position: absolute;
+              left: -4%;
+              cursor: pointer;
+              // border: 2px solid red;
+
+              .faq-plus {
+                // border: 2px solid green;
+                position: absolute;
+                padding: .2rem .6rem;
+              }
+  
+              .faq-minus {
+                // border: 2px solid blue;
+                position: absolute;
+                padding: .2rem .6rem;
+              }
+            }
+
           }
 
           h2 {

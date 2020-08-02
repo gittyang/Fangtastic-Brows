@@ -98,25 +98,20 @@ a {
     margin: auto;
     padding: 2rem; }
     .info-section .info-wrapper .info-containers .info-procedure-items {
-      border: 2px solid purple;
       margin-bottom: 1.5rem;
-      padding: 2rem;
-      position: relative; }
-      .info-section .info-wrapper .info-containers .info-procedure-items::before {
-        content: '';
-        width: 20px;
-        height: 20px;
-        background: black;
-        position: absolute;
-        left: 15px;
-        top: 30%;
-        transform: translate(-50%, 50%);
-        z-index: 1; }
+      padding: 2rem; }
       .info-section .info-wrapper .info-containers .info-procedure-items .info-item-heading {
-        border: 2px solid red; }
-      .info-section .info-wrapper .info-containers .info-procedure-items .info-item-body {
-        border: 2px solid green;
-        display: none; }
+        position: relative; }
+        .info-section .info-wrapper .info-containers .info-procedure-items .info-item-heading .faq-wrapper {
+          position: absolute;
+          left: -4%;
+          cursor: pointer; }
+          .info-section .info-wrapper .info-containers .info-procedure-items .info-item-heading .faq-wrapper .faq-plus {
+            position: absolute;
+            padding: .2rem .6rem; }
+          .info-section .info-wrapper .info-containers .info-procedure-items .info-item-heading .faq-wrapper .faq-minus {
+            position: absolute;
+            padding: .2rem .6rem; }
       .info-section .info-wrapper .info-containers .info-procedure-items h2 {
         font-weight: 600;
         margin-bottom: .3rem; }
