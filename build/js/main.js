@@ -14,13 +14,13 @@ window.addEventListener('scroll', () => {
 
 $(document).ready(function() {
 
-  $('.faq-wrapper').on('click', function(event) {
+  $('.info-item-heading').on('click', function(event) {
 
-    $(this).parent().next().slideToggle('slow', function(){
+    $(this).next().slideToggle('slow', function(){
       console.log('toggle worked');
     });
 
-    $(this).children('.faq-plus').toggleClass('hide');
+    $(this).children().children('.faq-plus').toggleClass('hide');
     console.log('hide worked');
 
   });

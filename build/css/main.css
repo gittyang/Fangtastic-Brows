@@ -91,37 +91,44 @@ a {
 .info-section {
   height: 1550px;
   padding: 3rem; }
-  .info-section .info-wrapper {
+  .info-section .info-container {
     border: 2px solid #fac9a9;
     width: 1200px;
     height: 100%;
     margin: auto;
-    padding: 2rem; }
-    .info-section .info-wrapper .info-containers .info-procedure-items {
+    padding: 3rem;
+    background-color: #fffcfa; }
+    .info-section .info-container .info-wrapper .info-title {
+      text-decoration: underline;
+      margin-bottom: 3rem; }
+    .info-section .info-container .info-wrapper .info-procedure-items {
       margin-bottom: 1.5rem;
       padding: 2rem; }
-      .info-section .info-wrapper .info-containers .info-procedure-items .info-item-heading {
+      .info-section .info-container .info-wrapper .info-procedure-items .info-item-heading {
+        cursor: pointer;
+        padding: .5rem;
+        display: inline-block;
         position: relative; }
-        .info-section .info-wrapper .info-containers .info-procedure-items .info-item-heading .faq-wrapper {
+        .info-section .info-container .info-wrapper .info-procedure-items .info-item-heading .faq-wrapper {
           position: absolute;
-          left: -4%;
+          left: -40px;
           cursor: pointer; }
-          .info-section .info-wrapper .info-containers .info-procedure-items .info-item-heading .faq-wrapper .faq-plus {
+          .info-section .info-container .info-wrapper .info-procedure-items .info-item-heading .faq-wrapper .faq-plus {
             position: absolute;
             padding: .2rem .6rem; }
-          .info-section .info-wrapper .info-containers .info-procedure-items .info-item-heading .faq-wrapper .faq-minus {
+          .info-section .info-container .info-wrapper .info-procedure-items .info-item-heading .faq-wrapper .faq-minus {
             position: absolute;
             padding: .2rem .6rem; }
-      .info-section .info-wrapper .info-containers .info-procedure-items h2 {
+      .info-section .info-container .info-wrapper .info-procedure-items h2 {
         font-weight: 600;
         margin-bottom: .3rem; }
-      .info-section .info-wrapper .info-containers .info-procedure-items h3 {
+      .info-section .info-container .info-wrapper .info-procedure-items h3 {
         font-weight: 600;
         margin-bottom: .3rem; }
-      .info-section .info-wrapper .info-containers .info-procedure-items #info-ul li {
+      .info-section .info-container .info-wrapper .info-procedure-items #info-ul li {
         margin-left: 1.5rem;
         list-style-type: circle; }
-      .info-section .info-wrapper .info-containers .info-procedure-items p {
+      .info-section .info-container .info-wrapper .info-procedure-items p {
         margin-bottom: .2rem;
         font-weight: 100; }
 
