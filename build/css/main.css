@@ -133,15 +133,25 @@ a {
         font-weight: 100; }
 
 .services-section {
-  margin: auto;
-  width: 1200px;
-  height: 1000px; }
-  .services-section .services-items {
-    height: 150px;
-    margin-bottom: 2rem;
-    padding: 1rem; }
-    .services-section .services-items h2 {
-      font-weight: 600; }
+  padding: 2rem; }
+  .services-section .services-container {
+    margin: auto;
+    width: 1200px; }
+    .services-section .services-container .services-items {
+      height: 400px;
+      margin-bottom: 2rem;
+      padding: 2rem;
+      display: flex;
+      align-items: center; }
+      .services-section .services-container .services-items .services-item-img img {
+        height: 300px;
+        width: 350px;
+        background-attachment: fixed;
+        background-position: center;
+        background-size: cover;
+        margin-right: 2rem; }
+      .services-section .services-container .services-items h2 {
+        font-weight: 600; }
 
 .landing-section-about {
   height: 600px;
