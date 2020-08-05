@@ -25,19 +25,19 @@
           </li>
 
           <li class="nav-li">
-            <a class="nav-item" href="info.html">Info/Treatment</a>
-            <div class="dropdown-container">
+            <a class="nav-item" href="info.html">FAQ</a>
+            <!-- <div class="dropdown-container">
               <ul>
-                <li class="dropdown">Procedure</li>
+                <li class="dropdown">Pre/Post-Care</li>
               </ul>
               <ul>
                 <li class="dropdown">Procedure</li>
               </ul>
               <ul>
-                <li class="dropdown">Procedure</li>
+                <li class="dropdown">FAQ</li>
               </ul>              
-            </div>
- 
+            </div> -->
+  
           </li class="nav-li">
 
           <li class="nav-li">
@@ -54,7 +54,7 @@
         </ul>
       </div>
     </div>
-
+  
     <a href="" class="toggle-button">
       <span class="bar"></span>
       <span class="bar"></span>
@@ -67,10 +67,7 @@
     <div class="landing-parallax"></div>
     <div class="landing-container">
       <div class="landing top">
-        <h1>Creating Beautiful Brows | <span id="landing-h1">Since 2018</span></h1>
-      </div>
-      <div class="landing bottom">
-        <h2>North Loop Location Is Closed:<br>Find Me At Timeless.</h2>
+        <h1>Contact</h1>
       </div>
       <button class="bwButton">Book Now</button>
     </div>
@@ -142,43 +139,7 @@
       </form>
     </div>
 
-    <?php 
-
-      if (isset($_POST['submit'])) {
-        
-      $userName = $_POST['name'];
-      $userEmail = $_POST['email']
-      $userMessage = $_POST['message'];
-      
-      $emailFrom = 'nreply@fnagtasticbrows.com';
-      $emailSubject = "New Form Submission";
-      $emailBody = 
-      
-        "Name: $userName.\n".
-        "Email Id: $userEmail.\n".
-        "User Message: $userMessage.\n";
-
-      $mailTo = "ttyang251@gmail.com";
-      $headers = "From: $emailFrom \r\n";
-
-      $secretKey = "6LfbuOMUAAAAAOXNyofK4PHoX-n6hSFVJA0FDdAy";
-      $responseKey = $_POST['g-recaptcha-response'];
-      $userIp = $_SERVER[''];
-      $url = " https://www.google.com/recaptcha/api/siteverify?secret=$secretKey&response=$responseKey&remoteip=$userIp";
-
-
-      $reponse = file_get_contents($url);
-      $response = json.decode($reponse);
-      
-      if ($response->success) {
-
-        mail($mailTo, $emailSubject, $emailBody, $headers);
-        echo "Message sent successfully";
-      } else {
-          echo "Invalid captcha, please try again"
-      }
-
-    ?>
+ 
   </div>
 
   <!-- Google Embed Map -->
@@ -198,14 +159,6 @@
   type="text/javascript">
   </script>
 
-  <!-- <script src="https://www.google.com/recaptcha/api.js?render=_reCAPTCHA_site_key"></script>
-  <script>
-  grecaptcha.ready(function() {
-      grecaptcha.execute('_reCAPTCHA_site_key_', {action: 'homepage'}).then(function(token) {
-        ...
-      });
-  });
-  </script> -->
 </body>
 
 <footer>
