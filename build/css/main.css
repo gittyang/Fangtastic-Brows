@@ -281,6 +281,9 @@ a {
   height: 225px;
   background-color: white;
   display: flex; }
+  @media screen and (max-width: 576px) {
+    .navbar {
+      display: none; } }
   .navbar .nav-wrapper {
     width: 1200px;
     margin: 1rem auto 0;
@@ -292,6 +295,10 @@ a {
       height: 160px;
       margin: auto;
       margin-bottom: 1rem; }
+      @media screen and (max-width: 768px) {
+        .navbar .nav-wrapper .nav-title {
+          width: 350px;
+          height: 140px; } }
     .navbar .nav-wrapper .nav-links {
       margin: auto; }
       .navbar .nav-wrapper .nav-links ul {
@@ -301,10 +308,17 @@ a {
         .navbar .nav-wrapper .nav-links ul .nav-li:hover .dropdown-container {
           display: block; }
         .navbar .nav-wrapper .nav-links ul .nav-li .nav-item {
-          padding: .3rem 2rem .3rem 2rem;
+          padding: .1rem 2rem;
           font-size: 1.5rem;
           border-radius: 2px;
           display: block; }
+          @media screen and (max-width: 992px) {
+            .navbar .nav-wrapper .nav-links ul .nav-li .nav-item {
+              padding: .1rem 1.5rem; } }
+          @media screen and (max-width: 768px) {
+            .navbar .nav-wrapper .nav-links ul .nav-li .nav-item {
+              padding: 1rem 1rem;
+              font-size: 1.3rem; } }
           .navbar .nav-wrapper .nav-links ul .nav-li .nav-item:hover {
             cursor: pointer;
             background-color: #fac9a9;
