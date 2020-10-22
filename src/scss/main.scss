@@ -64,15 +64,94 @@
     }
   }
 
+  @media screen and (max-width: 768px) {
+
+    h1 {
+      font-size: 1.8rem;
+    }
+
+    h2 {
+      font-size: 1.3rem;
+    }
+
+    p {
+      font-size: .9rem;
+    }
+
+    .middle {
+      // border: 2px solid cyan;
+      .middle-wrapper {
+        // border: 2px solid orange;
+        max-width: 500px;
+        margin: auto;
+      }
+    }
+
+    .welcome-bottom {
+      display: block;
+
+      .welcome-bottom-wrapper {
+        // border: 2px solid yellow;
+        max-width: 500px;
+        display: block;
+
+        .welcome-services {
+          // border: 2px solid red;
+          margin-bottom: 3rem;
+        }
+      }
+    }
+  }
+
+  @media screen and (max-width: 576px) {
+
+    h1 {
+      font-size: 1.3rem;
+    }
+
+    h2 {
+      font-size: 1.2rem;
+    }
+
+    p {
+      font-size: .9rem;
+    }
+
+    .middle {
+      // border: 2px solid cyan;
+      .middle-wrapper {
+        // border: 2px solid orange;
+        max-width: 350px;
+        margin: auto;
+      }
+    }
+
+    .welcome-bottom {
+      display: block;
+
+      .welcome-bottom-wrapper {
+        // border: 2px solid yellow;
+        max-width: 350px;
+        display: block;
+
+        .welcome-services {
+          // border: 2px solid red;
+          margin-bottom: 3rem;
+        }
+      }
+    }
+  }
+
   .welcome {
     // border: 2px solid green;
     text-align: center;
-    padding: 2rem 0;
+    padding-bottom: 3rem;
   }
 
   .top {
     // border: 2px solid red;
     text-transform: uppercase;
+    padding-top: 3rem;
   }
 
   .middle {
@@ -86,7 +165,7 @@
 
   .welcome-bottom {
     // border: 2px solid blue;
-    padding: 2rem 0; 
+    // padding-bottom: 2rem; 
     height: auto;
 
     .welcome-bottom-wrapper {
@@ -94,25 +173,30 @@
       width: 1150px;
       margin: auto;
       text-align: center;
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      grid-gap: 2rem;
-    }
 
-    .welcome-services {
-      // border: 2px solid red;
-      
-      h2 {
-        // border: 2px solid green;
-        font-weight: 600;
-        padding-bottom: .5rem;
+      @media screen and (min-width: 768px) {
+        
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 2rem;
       }
 
-      p {
-        // border: 2px solid orange;
-        padding-bottom: 1rem;
+      .welcome-services {
+        // border: 2px solid red;
+        
+        h2 {
+          // border: 2px solid green;
+          font-weight: 600;
+          padding-bottom: .5rem;
+        }
+  
+        p {
+          // border: 2px solid orange;
+          padding-bottom: 1rem;
+        }
       }
     }
+
   }
 
 }
@@ -122,6 +206,13 @@
   // border: 2px solid red;
   // height: 800px;
   padding: 3rem;
+
+  @media screen and (max-width: 576px) {
+    padding: 2rem 0;
+    // margin: 3rem 0;
+  }
+
+
 
   .gallery-heading {
     text-align: center;
@@ -151,6 +242,10 @@
     @media screen and (max-width: 768px) {
       width: 400px;
       height: 400px;
+    }
+
+    @media screen and (max-width: 576px) {
+      display: none;
     }
 
     img {
@@ -187,9 +282,31 @@
     // border: 2px solid blue;
     width: 900px;
     margin: auto;
-    padding: 0;
+    padding: 1rem;
     display: flex;
     align-items: center;
+
+    
+    @media screen and (max-width: 992px) {
+      width: 650px;     
+    }
+
+    @media screen and (max-width: 768px) {
+      // border: 2px solid red;
+      width: 450px;     
+    }
+
+    @media screen and (max-width: 576px) {
+      // border: 2px solid red;
+      width: 350px;   
+      display: block;  
+
+      li {
+        // border: 2px solid red;
+        padding: 1rem;
+
+      }
+    }
 
     li {
       // border: 2px solid red;
@@ -206,14 +323,6 @@
       }
     }
 
-    @media screen and (max-width: 992px) {
-      width: 650px;     
-    }
-
-    @media screen and (max-width: 768px) {
-      // border: 2px solid red;
-      width: 450px;     
-    }
   }
 
 }
@@ -236,6 +345,18 @@ footer {
       // border: 2px solid green;
       display: flex;
       align-items: center;
+
+      @media screen and (max-width: 768px) {
+        h2 {
+          font-size: 1.3rem;
+        }
+      }
+
+      @media screen and (max-width: 576px) {
+        h2 {
+          font-size: 1.1rem;
+        }
+      }
     }  
   
     #footer-icons {

@@ -148,16 +148,26 @@ a {
     top: 30%;
     right: 10%;
     z-index: 1;
+
+    @media screen and (max-width: 576px) {
+      right: -10%;
+    } 
+
+    @media screen and (max-width: 460px) {
+      right: -20%;
+    } 
+
     .landing {
-      h1, h2 {
+      h1 {
         color: white;
+
+          #landing-h1 {
+            font-size: 1.3rem;
+          }
       }
     }
     .top {
       padding-bottom: 1rem;
-      #landing-h1 {
-        font-size: 1.3rem;
-      }
     }
     .bottom {
       padding-bottom: 1.5rem;
