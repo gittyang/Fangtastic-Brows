@@ -21,6 +21,62 @@
   max-width: 1200px;
   margin: auto;
 
+  .welcome {
+    // border: 2px solid green;
+    text-align: center;
+    padding-bottom: 3rem;
+  }
+
+  .top {
+    // border: 2px solid red;
+    text-transform: uppercase;
+    padding-top: 3rem;
+  }
+
+  .middle {
+    // border: 2px solid green;
+    .middle-wrapper {
+      // border: 2px solid orange;
+      width: 768px;
+      margin: auto;
+    }
+  }
+
+  .welcome-bottom {
+    // border: 2px solid blue;
+    // padding-bottom: 2rem; 
+    height: auto;
+
+    .welcome-bottom-wrapper {
+      // border: 2px solid orange;
+      width: 1150px;
+      margin: auto;
+      text-align: center;
+
+      @media screen and (min-width: 768px) {
+        
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 2rem;
+      }
+
+      .welcome-services {
+        // border: 2px solid red;
+        
+        h2 {
+          // border: 2px solid green;
+          font-weight: 600;
+          padding-bottom: .5rem;
+        }
+  
+        p {
+          // border: 2px solid orange;
+          padding-bottom: 1rem;
+        }
+      }
+    }
+  }
+
   @media screen and (max-width: 1200px) {
     .welcome-bottom {
 
@@ -140,63 +196,6 @@
         }
       }
     }
-  }
-
-  .welcome {
-    // border: 2px solid green;
-    text-align: center;
-    padding-bottom: 3rem;
-  }
-
-  .top {
-    // border: 2px solid red;
-    text-transform: uppercase;
-    padding-top: 3rem;
-  }
-
-  .middle {
-    // border: 2px solid green;
-    .middle-wrapper {
-      // border: 2px solid orange;
-      width: 768px;
-      margin: auto;
-    }
-  }
-
-  .welcome-bottom {
-    // border: 2px solid blue;
-    // padding-bottom: 2rem; 
-    height: auto;
-
-    .welcome-bottom-wrapper {
-      // border: 2px solid orange;
-      width: 1150px;
-      margin: auto;
-      text-align: center;
-
-      @media screen and (min-width: 768px) {
-        
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        grid-gap: 2rem;
-      }
-
-      .welcome-services {
-        // border: 2px solid red;
-        
-        h2 {
-          // border: 2px solid green;
-          font-weight: 600;
-          padding-bottom: .5rem;
-        }
-  
-        p {
-          // border: 2px solid orange;
-          padding-bottom: 1rem;
-        }
-      }
-    }
-
   }
 
 }

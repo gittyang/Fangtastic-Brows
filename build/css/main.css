@@ -59,7 +59,8 @@ p {
   margin: 0;
   padding: 0rem;
   font-size: 1rem;
-  line-height: 1.3rem; }
+  line-height: 1.3rem;
+  font-family: 'Questrial', sans-serif; }
 
 ul {
   margin: 0;
@@ -90,6 +91,9 @@ a {
 
 .info-section {
   padding: 3rem; }
+  @media screen and (max-width: 992px) {
+    .info-section {
+      padding: 2rem 1rem; } }
   .info-section .info-container {
     border: 2px solid #fac9a9;
     width: 1200px;
@@ -130,6 +134,30 @@ a {
       .info-section .info-container .info-wrapper .info-procedure-items p {
         margin-bottom: .2rem;
         font-weight: 100; }
+    @media screen and (max-width: 1400px) {
+      .info-section .info-container {
+        width: 1000px; } }
+    @media screen and (max-width: 1200px) {
+      .info-section .info-container {
+        width: 850px; }
+        .info-section .info-container .info-wrapper .info-title h1 {
+          font-size: 2.3rem; }
+        .info-section .info-container .info-wrapper .info-procedure-items {
+          padding: .5rem; }
+          .info-section .info-container .info-wrapper .info-procedure-items h2 {
+            font-size: 1.3rem; }
+          .info-section .info-container .info-wrapper .info-procedure-items p {
+            font-size: .95rem; } }
+    @media screen and (max-width: 992px) {
+      .info-section .info-container {
+        width: 700px;
+        padding: 2rem; }
+        .info-section .info-container .info-wrapper .info-title h1 {
+          font-size: 2.1rem; }
+        .info-section .info-container .info-wrapper .info-procedure-items h2 {
+          font-size: 1.3rem; }
+        .info-section .info-container .info-wrapper .info-procedure-items p {
+          font-size: .9rem; } }
 
 .services-section {
   padding: 2rem; }
@@ -326,10 +354,10 @@ a {
           display: block; }
           @media screen and (max-width: 992px) {
             .navbar .nav-wrapper .nav-links ul .nav-li .nav-item {
-              padding: .1rem 1.5rem; } }
+              padding: .4rem 1.5rem; } }
           @media screen and (max-width: 768px) {
             .navbar .nav-wrapper .nav-links ul .nav-li .nav-item {
-              padding: 1rem 1rem;
+              padding: .6rem 1rem;
               font-size: 1.3rem; } }
           .navbar .nav-wrapper .nav-links ul .nav-li .nav-item:hover {
             cursor: pointer;
@@ -414,6 +442,31 @@ a {
 .welcome-section {
   max-width: 1200px;
   margin: auto; }
+  .welcome-section .welcome {
+    text-align: center;
+    padding-bottom: 3rem; }
+  .welcome-section .top {
+    text-transform: uppercase;
+    padding-top: 3rem; }
+  .welcome-section .middle .middle-wrapper {
+    width: 768px;
+    margin: auto; }
+  .welcome-section .welcome-bottom {
+    height: auto; }
+    .welcome-section .welcome-bottom .welcome-bottom-wrapper {
+      width: 1150px;
+      margin: auto;
+      text-align: center; }
+      @media screen and (min-width: 768px) {
+        .welcome-section .welcome-bottom .welcome-bottom-wrapper {
+          display: grid;
+          grid-template-columns: repeat(3, 1fr);
+          grid-gap: 2rem; } }
+      .welcome-section .welcome-bottom .welcome-bottom-wrapper .welcome-services h2 {
+        font-weight: 600;
+        padding-bottom: .5rem; }
+      .welcome-section .welcome-bottom .welcome-bottom-wrapper .welcome-services p {
+        padding-bottom: 1rem; }
   @media screen and (max-width: 1200px) {
     .welcome-section .welcome-bottom .welcome-bottom-wrapper {
       max-width: 900px; } }
@@ -463,31 +516,6 @@ a {
         display: block; }
         .welcome-section .welcome-bottom .welcome-bottom-wrapper .welcome-services {
           margin-bottom: 3rem; } }
-  .welcome-section .welcome {
-    text-align: center;
-    padding-bottom: 3rem; }
-  .welcome-section .top {
-    text-transform: uppercase;
-    padding-top: 3rem; }
-  .welcome-section .middle .middle-wrapper {
-    width: 768px;
-    margin: auto; }
-  .welcome-section .welcome-bottom {
-    height: auto; }
-    .welcome-section .welcome-bottom .welcome-bottom-wrapper {
-      width: 1150px;
-      margin: auto;
-      text-align: center; }
-      @media screen and (min-width: 768px) {
-        .welcome-section .welcome-bottom .welcome-bottom-wrapper {
-          display: grid;
-          grid-template-columns: repeat(3, 1fr);
-          grid-gap: 2rem; } }
-      .welcome-section .welcome-bottom .welcome-bottom-wrapper .welcome-services h2 {
-        font-weight: 600;
-        padding-bottom: .5rem; }
-      .welcome-section .welcome-bottom .welcome-bottom-wrapper .welcome-services p {
-        padding-bottom: 1rem; }
 
 .home-gallery {
   padding: 3rem; }
