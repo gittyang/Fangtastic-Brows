@@ -94,6 +94,9 @@ a {
   @media screen and (max-width: 992px) {
     .info-section {
       padding: 2rem 1rem; } }
+  @media screen and (max-width: 576px) {
+    .info-section {
+      padding: .5rem; } }
   .info-section .info-container {
     border: 2px solid #fac9a9;
     width: 1200px;
@@ -109,7 +112,7 @@ a {
       padding: 2rem; }
       .info-section .info-container .info-wrapper .info-procedure-items .info-item-heading {
         cursor: pointer;
-        padding: .5rem;
+        padding: .5rem 0;
         display: inline-block;
         position: relative; }
         .info-section .info-container .info-wrapper .info-procedure-items .info-item-heading .faq-wrapper {
@@ -158,6 +161,30 @@ a {
           font-size: 1.3rem; }
         .info-section .info-container .info-wrapper .info-procedure-items p {
           font-size: .9rem; } }
+    @media screen and (max-width: 768px) {
+      .info-section .info-container {
+        width: 500px; }
+        .info-section .info-container .info-wrapper .info-title h1 {
+          font-size: 2rem; }
+        .info-section .info-container .info-wrapper .info-procedure-items h2 {
+          font-size: 1.2rem; } }
+    @media screen and (max-width: 576px) {
+      .info-section .info-container {
+        width: 350px;
+        padding: .5rem;
+        border: none; }
+        .info-section .info-container .info-wrapper .info-title {
+          margin-bottom: .5rem; }
+          .info-section .info-container .info-wrapper .info-title h1 {
+            font-size: 1.1rem; }
+        .info-section .info-container .info-wrapper .info-procedure-items .info-item-heading {
+          cursor: default; }
+        .info-section .info-container .info-wrapper .info-procedure-items h2 {
+          font-size: 1rem; }
+        .info-section .info-container .info-wrapper .info-procedure-items p {
+          font-size: .8rem; }
+        .info-section .info-container .info-wrapper .info-procedure-items .info-item-heading .faq-wrapper {
+          display: none; } }
 
 .services-section {
   padding: 2rem; }
