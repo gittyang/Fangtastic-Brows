@@ -9,6 +9,9 @@
 .hide {
   display: none; }
 
+.hidePlus {
+  display: none; }
+
 .show {
   display: block; }
 
@@ -177,14 +180,16 @@ a {
           margin-bottom: .5rem; }
           .info-section .info-container .info-wrapper .info-title h1 {
             font-size: 1.1rem; }
-        .info-section .info-container .info-wrapper .info-procedure-items .info-item-heading {
-          cursor: default; }
-        .info-section .info-container .info-wrapper .info-procedure-items h2 {
-          font-size: 1rem; }
-        .info-section .info-container .info-wrapper .info-procedure-items p {
-          font-size: .8rem; }
-        .info-section .info-container .info-wrapper .info-procedure-items .info-item-heading .faq-wrapper {
-          display: none; } }
+        .info-section .info-container .info-wrapper .info-procedure-items {
+          padding: 0; }
+          .info-section .info-container .info-wrapper .info-procedure-items .info-item-heading {
+            cursor: default; }
+          .info-section .info-container .info-wrapper .info-procedure-items h2 {
+            font-size: 1rem; }
+          .info-section .info-container .info-wrapper .info-procedure-items p {
+            font-size: .8rem; }
+          .info-section .info-container .info-wrapper .info-procedure-items .info-item-heading .faq-wrapper {
+            display: none; } }
 
 .services-section {
   padding: 2rem; }

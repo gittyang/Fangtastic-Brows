@@ -2,13 +2,11 @@
 
 // Parallax Effects
 const parallax = document.querySelector('.landing-parallax');
-// console.log(parallax);
 
 window.addEventListener('scroll', () => {
   let offset = window.pageYOffset;
   parallax.style.backgroundPositionY = offset * -.4 + "px";
 });
-
 
 
 // FAQ
@@ -21,20 +19,16 @@ $(document).ready(function() {
 
       // this toggles the slide in slide out animation
       const $body = $(this).next();
-      console.log('hi');
       $body.slideToggle(function(){
-        $(this).removeClass('hide');
-        $(this).addClass('show');
+        $(this).toggleClass('show');
+        $(this).toggleClass('hide');
         console.log('toggle worked');
       });
   
-      // this toggles the minus and plus sign
-      $(this).children().children('.faq-plus').toggleClass('hide');
-      // console.log('hide worked');
+      // this toggles the minus and plus sign icon
+      $(this).children().children('.faq-plus').toggleClass('hidePlus'); 
 
-    } else {
-      console.log('screen too small');
-    }
+    } 
 
   });
 
@@ -46,7 +40,6 @@ $(document).ready(function() {
 
     // display the faq body paragraph
     $('.info-item-body').css('display', 'block');
-    console.log('shown')
 
   }
 
@@ -55,9 +48,10 @@ $(document).ready(function() {
   $(window).resize(function() {
 
     clearTimeout(resizeId);
-    resizeId = setTimeout(resize, 10)
+    resizeId = setTimeout(resize, 1)
 
   });
+
 
   // On resize to sm, display body
   function resize () {
@@ -66,13 +60,6 @@ $(document).ready(function() {
 
       // when window is resized and if screen is below 576px
 
-      // if a faq icon is open (-), then close to (+)
-      if( $('.faq-plus').hasClass('hide') ) {
-
-        $('.faq-plus').removeClass('hide');
-        
-      }
-
       // display the faq body paragraph
       $('.info-item-body').css('display', 'block');
       console.log('shown after resize')
@@ -80,21 +67,9 @@ $(document).ready(function() {
     } else {
 
       // otherwise, for m screens or higher, display original state
-
-      const show = document.querySelectorAll('.show');
-      // console.log(show);
-      for (i = 0; i < show.length; i ++) {
-        const sBodies = show[i];
-        console.log(sBodies);
-      }
       $('.show').css('display', 'block');
 
       const hide = document.querySelectorAll('.hide');
-      // console.log(hide);
-      for (i = 0; i < hide.length; i ++) {
-        const hBodies = hide[i];
-        console.log(hBodies);
-      }
       $('.hide').css('display', 'none');
 
     }
