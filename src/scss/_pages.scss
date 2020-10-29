@@ -25,11 +25,11 @@
 
     .info-container {
       border: 2px solid lighten(rgb(248, 186, 145), 5);
+      background-color: lighten(rgb(248, 186, 145), 22);
       width: 1200px;
       height: 100%;
       margin: auto;
       padding: 3rem;
-      background-color: lighten(rgb(248, 186, 145), 22);
 
       .info-wrapper {
         // border: 2px solid green;
@@ -225,31 +225,62 @@
 
 .services-section {
   // border: 2px solid red;
-  padding: 2rem;
+  padding: 5rem;
   // background-color: lighten(rgb(248, 186, 145), 15);
   // color: white;
 
   .services-container {
-    // border: 2px solid green;
+    border: 2px solid lighten(rgb(248, 186, 145), 5);
+    background-color: lighten(rgb(248, 186, 145), 22);
     margin: auto;
+    padding: 4rem;
     width: 1200px;
   
     .services-items {
-      // border: 2px solid blue;
-      height: 400px;
-      margin-bottom: 2rem;
-      padding: 2rem; 
+      // border: 2px solid brown;
+      height: 350px;
+      margin-bottom: 5rem;
+      // padding: 2rem;
+       
       display: flex;
-      align-items: center;
+      // align-items: center;
   
       .services-item-img img {
         // border: 2px solid red;
-        height: 300px;
-        width: 350px;
+        height: 350px;
+        width: 400px;
         background-attachment: fixed;
         background-position: center;
         background-size: cover;
-        margin-right: 2rem;
+        // margin-right: 2rem;
+      }
+
+      .services-item-description {
+        // border: 2px solid blue;
+        width: 100%;
+        height: 100%;
+        padding: 0 2rem;
+
+        h1 {
+          margin-bottom: 1rem;
+          font-weight: 600;
+          font-size: 2rem;
+        } 
+
+        h2 {
+          margin-bottom: 1rem;
+        }
+
+        h3 {
+          margin-bottom: 1rem;
+          font-family: 'Questrial', sans-serif;
+        }
+
+        h4 {
+          font-family: 'Questrial', sans-serif;
+          margin-bottom: 1rem;
+        }
+
       }
 
       h2 {

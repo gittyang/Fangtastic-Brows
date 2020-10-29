@@ -102,11 +102,11 @@ a {
       padding: .5rem; } }
   .info-section .info-container {
     border: 2px solid #fac9a9;
+    background-color: #fffcfa;
     width: 1200px;
     height: 100%;
     margin: auto;
-    padding: 3rem;
-    background-color: #fffcfa; }
+    padding: 3rem; }
     .info-section .info-container .info-wrapper .info-title {
       text-decoration: underline;
       margin-bottom: 3rem; }
@@ -192,23 +192,39 @@ a {
             display: none; } }
 
 .services-section {
-  padding: 2rem; }
+  padding: 5rem; }
   .services-section .services-container {
+    border: 2px solid #fac9a9;
+    background-color: #fffcfa;
     margin: auto;
+    padding: 4rem;
     width: 1200px; }
     .services-section .services-container .services-items {
-      height: 400px;
-      margin-bottom: 2rem;
-      padding: 2rem;
-      display: flex;
-      align-items: center; }
+      height: 350px;
+      margin-bottom: 5rem;
+      display: flex; }
       .services-section .services-container .services-items .services-item-img img {
-        height: 300px;
-        width: 350px;
+        height: 350px;
+        width: 400px;
         background-attachment: fixed;
         background-position: center;
-        background-size: cover;
-        margin-right: 2rem; }
+        background-size: cover; }
+      .services-section .services-container .services-items .services-item-description {
+        width: 100%;
+        height: 100%;
+        padding: 0 2rem; }
+        .services-section .services-container .services-items .services-item-description h1 {
+          margin-bottom: 1rem;
+          font-weight: 600;
+          font-size: 2rem; }
+        .services-section .services-container .services-items .services-item-description h2 {
+          margin-bottom: 1rem; }
+        .services-section .services-container .services-items .services-item-description h3 {
+          margin-bottom: 1rem;
+          font-family: 'Questrial', sans-serif; }
+        .services-section .services-container .services-items .services-item-description h4 {
+          font-family: 'Questrial', sans-serif;
+          margin-bottom: 1rem; }
       .services-section .services-container .services-items h2 {
         font-weight: 600; }
 
