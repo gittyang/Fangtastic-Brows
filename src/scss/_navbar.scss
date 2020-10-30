@@ -1,26 +1,23 @@
 // Navigation //
 .navbar {
-    // border: 2px solid red;
+    // border: 5px solid purple;
     width: 100%;
-    height: 225px;
+    height: 230px;
     background-color: white;
     display: flex;
 
-    @media screen and (max-width: 576px) {
-      display: none;
+    @media screen and (max-width: 768px) {
+      height: 220px;
     }
   
     .nav-wrapper {
-      // border: 2px solid pink;
+      // border: 2px solid red;
       width: 1200px;
       margin: 1rem auto 0;
-      // margin: 1rem auto;
       display: block;
-
-      // font-family: 'Julius Sans One', sans-serif;
   
       .nav-title {
-        // border: 2px solid red;
+        // border: 2px solid blue;
         background-image: url(../img/logo2.jpg);
         background-size: cover;
         width: 375px;
@@ -30,7 +27,49 @@
 
         @media screen and (max-width: 768px) {
           width: 350px;
-          height: 140px;
+          height: 145px;
+        }
+
+        @media screen and (max-width: 576px) {
+          width: 325px;
+          height: 135px;
+        }
+
+        @media screen and (max-width: 414px) {
+          width: 325px;
+          height: 135px;
+        }
+      }
+
+      // sm devices nav drop down menu
+      @media screen and (max-width: 576px) {
+
+        .nav-drop-down {
+          display: block;
+          border-top: 1px solid grey;
+          border-bottom: 1px solid grey;
+          color: black;
+          text-align: center;
+          margin: auto;
+          padding: .2rem 0;
+          cursor: pointer;
+          width: 400px;
+   
+          &:hover {
+  
+            i {
+              transform: translate(0px, 3px);
+              color: rgb(248, 186, 145);
+              @include easeOut();
+            }
+          }
+        }
+      }
+
+      @media screen and (max-width: 460px) {
+        .nav-drop-down {
+          // border width
+          width: 300px;
         }
       }
     
@@ -53,16 +92,6 @@
             .nav-item {
               // border: 2px solid green;
               padding: .4rem 2rem;
-
-              @media screen and (max-width: 992px) {
-                padding: .4rem 1.5rem;
-              }
-
-              @media screen and (max-width: 768px) {
-                padding: .6rem 1rem;
-                font-size: 1.3rem;
-              }
-
               font-size: 1.5rem;
               border-radius: 2px;
               display: block;
@@ -71,6 +100,15 @@
                 cursor: pointer;
                 background-color: lighten(rgb(248, 186, 145), 5);
                 @include easeOut();
+              }
+
+              @media screen and (max-width: 992px) {
+                padding: .4rem 1.5rem;
+              }
+
+              @media screen and (max-width: 768px) {
+                padding: .6rem 1rem;
+                font-size: 1.3rem;
               }
             }
   
@@ -85,6 +123,7 @@
                 display: flex;
                 flex-direction: column;
   
+                // dropdown items for nav links m+ devices
                 .dropdown {
                   // border: 2px solid blue;
                   background-color: lighten(rgb(248, 186, 145), 20);
@@ -107,11 +146,28 @@
             }          
           }
         }
+
+        // nav links for sm devices display with js
+        @media screen and (max-width: 576px) {
+          display: none;
+          background-color: white;
+
+          ul {
+            flex-direction: column;
+
+            .nav-li {
+              text-align: center;
+              z-index: 5; 
+            }
+          }
+        }
       }
     }
   
     .toggle-button {
       // border: 2px solid chartreuse;
+      display: none;
+
       position: absolute;
       top: 1rem;
       right: 1rem;
@@ -119,10 +175,16 @@
       height: 30px;
       display: flex;
       flex-direction: column;
+
+      @media screen and (max-width: 414px) {
+        top: .5rem;
+        right: .5rem;
+      }
   
       .bar {
-        height: 3px;
-        width: 30px;
+        display: none;
+        height: 2px;
+        width: 25px;
         background-color: black;
         border-radius: 1px;
         margin: 2px;
