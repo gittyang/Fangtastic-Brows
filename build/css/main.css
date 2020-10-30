@@ -557,7 +557,7 @@ a {
           transition: all .2s ease-out; } }
     @media screen and (max-width: 460px) {
       .navbar .nav-wrapper .nav-drop-down {
-        width: 300px; } }
+        width: 320px; } }
     .navbar .nav-wrapper .nav-links {
       margin: auto; }
       .navbar .nav-wrapper .nav-links ul {
@@ -605,7 +605,8 @@ a {
       @media screen and (max-width: 576px) {
         .navbar .nav-wrapper .nav-links {
           display: none;
-          background-color: white; }
+          background-color: white;
+          padding: .5rem; }
           .navbar .nav-wrapper .nav-links ul {
             flex-direction: column; }
             .navbar .nav-wrapper .nav-links ul .nav-li {

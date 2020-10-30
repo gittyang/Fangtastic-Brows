@@ -69,7 +69,7 @@
       @media screen and (max-width: 460px) {
         .nav-drop-down {
           // border width
-          width: 300px;
+          width: 320px;
         }
       }
     
@@ -151,6 +151,7 @@
         @media screen and (max-width: 576px) {
           display: none;
           background-color: white;
+          padding: .5rem;
 
           ul {
             flex-direction: column;
