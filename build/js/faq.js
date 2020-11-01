@@ -9,9 +9,9 @@ $(document).ready(function() {
         // this toggles the slide in slide out animation
         const $body = $(this).next();
         $body.slideToggle(function(){
-          $(this).toggleClass('show');
-          $(this).toggleClass('hide');
-          console.log('toggle worked');
+          $(this).toggleClass('showB');
+          $(this).toggleClass('hideB');
+          // console.log('toggle worked');
         });
     
         // this toggles the minus and plus sign icon
@@ -51,15 +51,14 @@ $(document).ready(function() {
   
         // display the faq body paragraph
         $('.info-item-body').css('display', 'block');
-        console.log('shown after resize')
+        // console.log('shown after resize')
   
       } else {
   
         // otherwise, for m screens or higher, display original state
-        $('.show').css('display', 'block');
+        $('.showB').css('display', 'block');
   
-        const hide = document.querySelectorAll('.hide');
-        $('.hide').css('display', 'none');
+        $('.hideB').css('display', 'none');
   
       }
   

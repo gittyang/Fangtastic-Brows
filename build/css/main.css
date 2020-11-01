@@ -12,6 +12,9 @@
 .hidePlus {
   display: none; }
 
+.hideB {
+  display: none; }
+
 .show {
   display: block; }
 
@@ -190,6 +193,9 @@ a {
             font-size: .8rem; }
           .info-section .info-container .info-wrapper .info-procedure-items .info-item-heading .faq-wrapper {
             display: none; } }
+    @media screen and (max-width: 414px) {
+      .info-section .info-container {
+        width: 320px; } }
 
 .services-section {
   padding: 5rem; }

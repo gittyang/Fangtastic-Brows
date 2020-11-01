@@ -100,6 +100,7 @@
         }
       }
 
+      // Media queries for FAQ section
       @media screen and (max-width: 1400px) {
         width: 1000px;
       }
@@ -216,6 +217,11 @@
             }
           }
         }
+      }
+
+      @media screen and (max-width: 414px) {
+        // border: 2px solid red;
+        width: 320px;
       }
     }
 }
