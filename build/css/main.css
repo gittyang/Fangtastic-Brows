@@ -211,6 +211,9 @@ a {
   @media screen and (max-width: 576px) {
     .services-section {
       padding: 2rem 1rem; } }
+  @media screen and (max-width: 576px) {
+    .services-section {
+      padding: 1rem .5rem; } }
   .services-section .services-container {
     border: 2px solid #fac9a9;
     background-color: #fffcfa;
@@ -312,6 +315,19 @@ a {
             font-size: 1.3rem; }
           .services-section .services-container .services-items .services-item-description h4 {
             font-size: .9rem; } }
+    @media screen and (max-width: 414px) {
+      .services-section .services-container {
+        width: 320px;
+        padding: 1rem .5rem; }
+        .services-section .services-container .services-items .services-item-img img {
+          height: 250px;
+          width: 300px; }
+        .services-section .services-container .services-items .services-item-description {
+          padding: 0; }
+          .services-section .services-container .services-items .services-item-description h1 {
+            font-size: 1.2rem; }
+          .services-section .services-container .services-items .services-item-description h4 {
+            font-size: .8rem; } }
 
 .landing-section-about {
   height: 600px;
