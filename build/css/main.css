@@ -436,7 +436,8 @@ a {
         font-size: 1.2rem; } }
   @media screen and (max-width: 992px) {
     .about-section .about-container {
-      width: 720px; }
+      width: 720px;
+      padding: 3rem 1rem; }
       .about-section .about-container .about-img img {
         height: 200px;
         width: 200px; }
@@ -448,15 +449,12 @@ a {
       padding: 2rem 1rem; }
       .about-section .about-container .about-img {
         margin-right: 1rem; }
-        .about-section .about-container .about-img img {
-          height: 180px;
-          width: 180px; }
       .about-section .about-container .services-item-description h2 {
         font-size: 1rem; } }
   @media screen and (max-width: 576px) {
     .about-section .about-container {
       width: 350px;
-      padding: 1.5rem 1rem;
+      padding: 2rem 1rem;
       display: block; }
       .about-section .about-container .about-img {
         margin: 0;
@@ -467,7 +465,18 @@ a {
       .about-section .about-container .services-item-description {
         padding: .5rem; }
         .about-section .about-container .services-item-description h2 {
-          font-size: .9rem; } }
+          font-size: 1rem; } }
+  @media screen and (max-width: 414px) {
+    .about-section .about-container {
+      width: 320px;
+      padding: 2rem .5rem; }
+      .about-section .about-container .about-img img {
+        height: 300px;
+        width: 300px; }
+      .about-section .about-container .services-item-description {
+        padding: .5rem 0; }
+        .about-section .about-container .services-item-description h2 {
+          font-size: 1rem; } }
 
 .landing-section-contact {
   height: 600px;
