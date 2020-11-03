@@ -469,22 +469,136 @@
 
   .about-container {
     // border: 2px solid red;
-    width: 1000px;
+    width: 1200px;
     height: 100%;
     margin: auto;
     display: flex;
     justify-content: center;
     padding: 4rem 1rem;
-
+    font-family: 'Questrial', sans-serif;
 
     .about-img {
       // border: 2px solid blue;
       margin-right: 2rem;
 
       img {
-        height: 200px;
-        width: 200px;
+        height: 350px;
+        width: 350px;
 
+      }
+    }
+
+    .services-item-description {
+
+      h2 {
+        font-size: 1.4rem;
+      }
+    }
+
+    @media screen and (max-width: 1400px) {
+      width: 1100px;
+
+      .about-img {
+  
+        img {
+          height: 300px;
+          width: 300px;
+        }
+      }
+  
+      .services-item-description {
+        
+        h2 {
+          font-size: 1.3rem;
+        }
+      }
+    }
+
+    @media screen and (max-width: 1200px) {
+      width: 900px;
+
+      .about-img {
+        margin-right: 1.5rem;
+
+        img {
+          height: 250px;
+          width: 250px;
+        }
+      }
+  
+      .services-item-description {
+        
+        h2 {
+          font-size: 1.2rem;
+        }
+      }
+    }
+
+    @media screen and (max-width: 992px) {
+      width: 720px;
+
+      .about-img {
+  
+        img {
+          height: 200px;
+          width: 200px;
+        }
+      }
+  
+      .services-item-description {
+        
+        h2 {
+          font-size: 1.1rem;
+        }
+      }
+    }
+
+    @media screen and (max-width: 768px) {
+      // border: 2px solid red;
+      width: 550px;
+      padding: 2rem 1rem;
+
+
+      .about-img {
+        margin-right: 1rem;
+  
+        img {
+          height: 180px;
+          width: 180px;
+        }
+      }
+  
+      .services-item-description {
+        
+        h2 {
+          font-size: 1rem;
+        }
+      }
+    }
+
+    @media screen and (max-width: 576px) {
+      // border: 2px solid red;
+      width: 350px;
+      padding: 1.5rem 1rem;
+      display: block;
+
+      .about-img {
+        margin: 0;
+        text-align: center;
+
+  
+        img {
+          height: 300px;
+          width: 300px;
+        }
+      }
+  
+      .services-item-description {
+        padding: .5rem;
+        
+        h2 {
+          font-size: .9rem;
+        }
       }
     }
   }
