@@ -552,36 +552,39 @@ a {
 
 .contact-section {
   margin: auto;
-  height: 1300px;
-  width: 1200px; }
+  width: 1200px;
+  padding: 2rem; }
   .contact-section .contact-container {
-    height: 800px;
-    text-align: center; }
+    text-align: center;
+    margin-bottom: 2rem; }
     .contact-section .contact-container .contact-me {
-      padding: 1rem;
+      padding: 2rem;
       margin-bottom: 2rem; }
       .contact-section .contact-container .contact-me h1 {
         margin-bottom: 1rem; }
+      .contact-section .contact-container .contact-me h3 {
+        font-family: 'Questrial', sans-serif; }
     .contact-section .contact-container .contact-boxes {
-      height: 120px;
-      margin-bottom: 3rem;
+      margin-bottom: 4rem;
       display: grid;
       grid-template-columns: repeat(4, 1fr); }
-      .contact-section .contact-container .contact-boxes .box-item .contact-icons {
-        height: 50px;
-        padding: .5rem; }
-      .contact-section .contact-container .contact-boxes .box-item .contact-info {
-        height: auto;
-        padding-top: .5rem; }
-      .contact-section .contact-container .contact-boxes .box-line {
+      .contact-section .contact-container .contact-boxes .box-item {
+        padding: 0 1rem;
         border-right: 1px solid black; }
+        .contact-section .contact-container .contact-boxes .box-item:last-child {
+          border: none; }
+        .contact-section .contact-container .contact-boxes .box-item .contact-icons {
+          padding: .5rem; }
+        .contact-section .contact-container .contact-boxes .box-item .contact-info {
+          height: auto;
+          padding: .5rem; }
     .contact-section .contact-container .contact-form {
-      height: 500px;
       width: 700px;
       text-align: left;
-      margin: auto; }
+      margin: auto;
+      margin-bottom: 5rem; }
       .contact-section .contact-container .contact-form .forms {
-        padding-bottom: 1rem; }
+        margin-bottom: 1rem; }
         .contact-section .contact-container .contact-form .forms .form-top {
           padding: .25rem;
           margin-top: .5rem;
@@ -591,9 +594,47 @@ a {
           padding: .25rem;
           height: 100px;
           width: 100%; }
-  .contact-section #map-section #map {
-    width: 50%;
-    margin: auto; }
+  .contact-section #map-section {
+    margin: auto;
+    margin-bottom: 3rem;
+    width: 610px; }
+    .contact-section #map-section #map {
+      margin: auto;
+      text-align: center; }
+  @media screen and (max-width: 1400px) {
+    .contact-section {
+      width: 1150px; }
+      .contact-section .contact-container .contact-me h1 {
+        font-size: 2.3rem; }
+      .contact-section .contact-container .contact-me h3 {
+        font-size: 1.2rem; } }
+  @media screen and (max-width: 1200px) {
+    .contact-section {
+      width: 800px; }
+      .contact-section .contact-container .contact-me h1 {
+        font-size: 2.1rem; }
+      .contact-section .contact-container .contact-me h3 {
+        font-size: 1.1rem; }
+      .contact-section .contact-container .contact-boxes {
+        grid-template-columns: repeat(2, 1fr); }
+        .contact-section .contact-container .contact-boxes .box-item {
+          padding: 1rem; }
+          .contact-section .contact-container .contact-boxes .box-item:last-child, .contact-section .contact-container .contact-boxes .box-item:nth-child(2) {
+            border-right: none; }
+          .contact-section .contact-container .contact-boxes .box-item:nth-child(1), .contact-section .contact-container .contact-boxes .box-item:nth-child(2) {
+            border-bottom: 1px solid black; }
+      .contact-section #map-section {
+        margin: auto;
+        margin-bottom: 3rem; } }
+  @media screen and (max-width: 992px) {
+    .contact-section {
+      width: 700px; }
+      .contact-section .contact-container .contact-me h1 {
+        font-size: 1.9rem; }
+      .contact-section .contact-container .contact-me h3 {
+        font-size: 1rem; }
+      .contact-section .contact-container .contact-form {
+        width: 600px; } }
 
 .navbar {
   width: 100%;

@@ -628,73 +628,88 @@
 }
 
 .contact-section {
-  // border: 2px solid pink;
+  // border: 5px solid cyan;
   margin: auto;
-  height: 1300px; 
   width: 1200px;
-
+  padding: 2rem;
+  // text-align: center;
 
   .contact-container {
     // border: 2px solid red;
-    height: 800px;
     text-align: center;
+    margin-bottom: 2rem;
 
+    // Contact Heading
     .contact-me {
       // border: 2px solid blue;
-      padding: 1rem;
+      padding: 2rem;
       margin-bottom: 2rem;
+      
       h1 {
         margin-bottom: 1rem;
       }
+      
+      h3 {
+        font-family: 'Questrial', sans-serif;
+      }
+
     }
 
+    // Contact Items
     .contact-boxes {
       // border: 2px solid green;
-      height: 120px;
-      margin-bottom: 3rem;
+      margin-bottom: 4rem;
       display: grid;
       grid-template-columns: repeat(4, 1fr);
+      
 
       .box-item {
+        // border: 2px solid orange;
+        padding: 0 1rem;
+        border-right: 1px solid black;
+
+        &:last-child {
+          border: none;
+        }
+
         .contact-icons {
           // border: 2px solid red;
-          height: 50px;
           padding: .5rem;
         }
 
         .contact-info {
           // border: 2px solid blue;
           height: auto;
-          padding-top: .5rem;
+          padding: .5rem;
         }
       }
 
-      .box-line {
-        border-right: 1px solid black;
-      }
     }
 
+    // Contact Form
     .contact-form {
       // border: 2px solid orange;
-      height: 500px;
+      // height: 100%;
       width: 700px;
       text-align: left;
       margin: auto;
+      margin-bottom: 5rem;
 
       .forms {
         // border: 2px solid red;
-        padding-bottom: 1rem;
+        margin-bottom: 1rem;
         // margin-bottom: .5em;
 
         .form-top {
+          // border: 2px solid blue;
           padding: .25rem;
           margin-top: .5rem;
           height: 30px;
           width: 100%
         }
         .form-bottom {
+          // border: 2px solid green;
           padding: .25rem;
-          
           height: 100px;
           width: 100%
         }
@@ -704,15 +719,113 @@
   }
   
   #map-section {
-    // border: 2px solid blue;
-    // height: 450px;
-    // width: 600px;
-    // margin: auto;
+    // border: 2px solid red;
+    margin: auto;
+    margin-bottom: 3rem;
+    width: 610px;
   
     #map {
-      // height: 500px;
-      width: 50%;
       margin: auto;
+      text-align: center;
     }
   }
+
+  @media screen and (max-width: 1400px) {
+    // border: 2px solid cyan;
+    width: 1150px; 
+
+    .contact-container {
+
+      .contact-me {
+        // border: 2px solid red;
+
+        h1 {
+          font-size: 2.3rem;
+        }
+
+        h3 {
+          font-size: 1.2rem;
+        }
+      }
+
+    }
+  }
+
+  @media screen and (max-width: 1200px) {
+    // border: 2px solid cyan; 
+    width: 800px; 
+    // padding: 2rem;
+
+    .contact-container {
+      // border: 2px solid green;
+
+      .contact-me {
+        // border: 2px solid red;
+
+        h1 {
+          font-size: 2.1rem;
+        }
+
+        h3 {
+          font-size: 1.1rem;
+        }
+      }
+
+      .contact-boxes {
+        // border: 1px solid red;
+        grid-template-columns: repeat(2, 1fr);
+
+        .box-item {
+          // border: 2px solid blue;
+          padding: 1rem;
+
+          &:last-child, &:nth-child(2) {
+            border-right: none;
+          }
+
+          &:nth-child(1), &:nth-child(2) {
+            border-bottom: 1px solid black;
+          }
+        }
+      }
+
+    }
+
+    #map-section {
+      // border: 2px solid blue;
+      margin: auto;
+      margin-bottom: 3rem;
+
+    }
+  }
+
+  @media screen and (max-width: 992px) {
+    // border: 2px solid cyan;
+    width: 700px;  
+
+    .contact-container {
+      // border: 2px solid red;
+
+      .contact-me {
+        // border: 2px solid blue;
+
+        h1 {
+          font-size: 1.9rem;
+        }
+
+        h3 {
+          font-size: 1rem;
+        }
+      }
+
+      .contact-form { 
+        // border: 2px solid red;
+        width: 600px;
+      }
+    }
+
+  }
+    
+
+
 }
