@@ -2,74 +2,29 @@
 .navbar {
     // border: 5px solid purple;
     width: 100%;
-    height: 230px;
+    height: 240px;
     background-color: white;
     display: flex;
-
-    @media screen and (max-width: 768px) {
-      height: 220px;
-    }
   
     .nav-wrapper {
       // border: 2px solid red;
       width: 1200px;
       margin: 1rem auto 0;
-      display: block;
-  
+
       .nav-title {
-        // border: 2px solid blue;
-        background-image: url(../img/logo2.jpg);
-        background-size: cover;
-        width: 375px;
-        height: 160px;
-        margin: auto;
+        // border: 2px solid green;
+        text-align: center;
         margin-bottom: 1rem;
 
-        @media screen and (max-width: 768px) {
-          width: 350px;
-          height: 145px;
-        }
+        a {
+          // border: 2px solid blue;
 
-        @media screen and (max-width: 576px) {
-          width: 325px;
-          height: 135px;
-        }
+          img {
+            // border: 2px solid cyan;
+            width: auto; 
+            height: 100%;
 
-        @media screen and (max-width: 414px) {
-          width: 325px;
-          height: 135px;
-        }
-      }
-
-      // sm devices nav drop down menu
-      @media screen and (max-width: 576px) {
-
-        .nav-drop-down {
-          display: block;
-          border-top: 1px solid grey;
-          border-bottom: 1px solid grey;
-          color: black;
-          text-align: center;
-          margin: auto;
-          padding: .2rem 0;
-          cursor: pointer;
-          width: 400px;
-   
-          &:hover {
-  
-            i {
-              transform: translate(0px, 3px);
-              color: rgb(248, 186, 145);
-              @include easeOut();
-            }
           }
-        }
-      }
-
-      @media screen and (max-width: 460px) {
-        .nav-drop-down {
-          // border width
-          width: 320px;
         }
       }
     
@@ -91,7 +46,7 @@
   
             .nav-item {
               // border: 2px solid green;
-              padding: .4rem 2rem;
+              padding: .75rem 2rem;
               font-size: 1.5rem;
               border-radius: 2px;
               display: block;
@@ -103,47 +58,49 @@
               }
 
               @media screen and (max-width: 992px) {
-                padding: .4rem 1.5rem;
+                padding: .75rem 1.5rem;
+                font-size: 1.4rem;
               }
 
               @media screen and (max-width: 768px) {
-                padding: .6rem 1rem;
+                padding: .75rem 1rem; 
                 font-size: 1.3rem;
               }
             }
   
-            .dropdown-container {
-              // border: 2px solid red;
-              width: fit-content;
-              margin-right: auto;
-              border-radius: 10px;
-              display: none;
+            // If drop downs exist for menu
+            // .dropdown-container {
+            //   // border: 2px solid red;
+            //   width: fit-content;
+            //   margin-right: auto;
+            //   border-radius: 10px;
+            //   display: none;
   
-              ul {
-                display: flex;
-                flex-direction: column;
+            //   ul {
+            //     display: flex;
+            //     flex-direction: column;
   
-                // dropdown items for nav links m+ devices
-                .dropdown {
-                  // border: 2px solid blue;
-                  background-color: lighten(rgb(248, 186, 145), 20);
-                  padding: .5rem 2rem .5rem 2rem;
-                  font-size: 1.2rem;
-                  color: black;
-                  z-index: 1;
+            //     // dropdown items for nav links m+ devices
+            //     .dropdown {
+            //       // border: 2px solid blue;
+            //       background-color: lighten(rgb(248, 186, 145), 20);
+            //       padding: .5rem 2rem .5rem 2rem;
+            //       font-size: 1.2rem;
+            //       color: black;
+            //       z-index: 1;
   
-                  &:last-child {
-                    border-radius: 0 0 2px 2px;
-                  }
+            //       &:last-child {
+            //         border-radius: 0 0 2px 2px;
+            //       }
   
-                  &:hover {
-                    background-color: lighten(rgb(248, 186, 145), 10);
-                    cursor: pointer;
-                    @include easeOut();
-                  }
-                }              
-              }
-            }          
+            //       &:hover {
+            //         background-color: lighten(rgb(248, 186, 145), 10);
+            //         cursor: pointer;
+            //         @include easeOut();
+            //       }
+            //     }              
+            //   }
+            // }          
           }
         }
 
@@ -163,33 +120,36 @@
           }
         }
       }
-    }
+
+      // sm devices nav drop down menu
+      @media screen and (max-width: 576px) {
+
+        .nav-drop-down {
+          display: block;
+          border-top: 1px solid grey;
+          border-bottom: 1px solid grey;
+          color: black;
+          text-align: center;
+          margin: auto;
+          padding: .2rem 0;
+          cursor: pointer;
+          width: 400px;
+    
+          &:hover {
   
-    .toggle-button {
-      // border: 2px solid chartreuse;
-      display: none;
-
-      position: absolute;
-      top: 1rem;
-      right: 1rem;
-      width: 40px;
-      height: 30px;
-      display: flex;
-      flex-direction: column;
-
-      @media screen and (max-width: 414px) {
-        top: .5rem;
-        right: .5rem;
+            i {
+              transform: translate(0px, 3px);
+              color: rgb(248, 186, 145);
+              @include easeOut();
+            }
+          }
+        }
       }
-  
-      .bar {
-        display: none;
-        height: 2px;
-        width: 25px;
-        background-color: black;
-        border-radius: 1px;
-        margin: 2px;
-        padding: 0;
+
+      @media screen and (max-width: 460px) {
+        .nav-drop-down {
+          width: 320px;
+        }
       }
     }
   } 
