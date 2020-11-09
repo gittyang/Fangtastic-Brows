@@ -5,6 +5,14 @@
     height: 240px;
     background-color: white;
     display: flex;
+
+    @media screen and (max-width: 568px) {
+      height: 230px;
+    }
+
+    @media screen and (max-width: 414px) {
+      height: 220px;
+    }
   
     .nav-wrapper {
       // border: 2px solid red;
@@ -14,7 +22,7 @@
       .nav-title {
         // border: 2px solid green;
         text-align: center;
-        margin-bottom: 1rem;
+        margin-bottom: .5rem;
 
         a {
           // border: 2px solid blue;
@@ -22,7 +30,19 @@
           img {
             // border: 2px solid cyan;
             width: auto; 
-            height: 100%;
+            height: 170px;
+
+            @media screen and (max-width: 568px) {
+              height: 150px;
+            }
+
+            @media screen and (max-width: 414px) {
+              height: 140px;
+            }
+
+            @media screen and (max-width: 360px) {
+              height: 130px;
+            }
 
           }
         }
@@ -133,7 +153,7 @@
           margin: auto;
           padding: .2rem 0;
           cursor: pointer;
-          width: 400px;
+          width: 350px;
     
           &:hover {
   
@@ -149,6 +169,12 @@
       @media screen and (max-width: 460px) {
         .nav-drop-down {
           width: 320px;
+        }
+      }
+
+      @media screen and (max-width: 414px) {
+        .nav-drop-down {
+          width: 280px;
         }
       }
     }
